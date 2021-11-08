@@ -1,0 +1,3617 @@
+Este departamento chegou a conclusão que o acusado (até que se prove o contrário) é:
+
+Nome:Jeremy Bowers
+Sexo: Masculino
+Idade: 34 anos
+Altura: 1,86m
+Peso: 92,5 kg
+Endereço: Travessa Dunstable
+
+
+O mesmo foi avistado por uma testemunha (Annabel Church) fugindo do local do crime em um carro Honda Azul Placa: L3375A9 (de propriedade do suspeito).
+
+Após investigação, também foi encontrado seu nome nos registros do AAA / Delta SkyMiles e Museu de História do Bash (conforme documentos encontrados na carteira deixada na cena do crime).
+
+Ao chegar ao local de residência para entrevista do suspeito, a casa encontrava-se vazia e os vizinhos relataram que o Sr Bowers viajou recentemente.
+
+
+
+Os Dados da Investigação encontram-se detalhados abaixo:
+
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando
+$ ls
+README.txt  inicio.txt  misterio/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando
+$ cat inicio.txt
+Aconteceu um assassinato na Cidade do Terminal, e a polícia precisa da sua ajuda.
+
+Para descobrir o culpado, vá até o subdiretório "misterio" e comece investigando
+por lá.
+
+Você provavelmente vai querer começar analisando todas as pistas que foram
+encontradas na cena do crime (arquivo "cena-do-crime").
+
+Os policiais que analisaram a cena foram bastante detalhistas e colocaram, neste
+arquivo, TUDO que encontraram.
+
+Felizmente, o sargento analisou o relatório e marcou as pistas reais com a
+palavra "PISTA", em maiúsculas.
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando
+$ cd ./misterio
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep PISTA cena-do-crime.txt
+PISTA: A filmagem do caixa eletrônico está embaçada, mas mostra que o suspeito é um homem alto, pelo menos 1,83m de altura.
+PISTA: Encontramos uma carteira que provavelmente pertence ao assassino. Nenhum documento de identidade, apenas alguns trocados e carteirinhas dos grupos AAA, Delta SkyMiles, biblioteca e do Museu de História do Bash. Impossível rastrear as carteirinhas, e nenhuma delas possui nome, por algum motivo.
+PISTA: Interrogamos o garçom da cafeteria próxima à cena. Ele disse que uma mulher saiu da cafeteria logo antes de ouvirem os tiros. O nome dela era Annabel, tinha cabelo loiro curto e um sotaque da Nova Zelândia.
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Annabel pessoas.txt
+Annabel Sun     F       26      Vila Hart, linha 40
+Oluwasegun Annabel      M       37      Rua Mattapan, linha 173
+Annabel Church  F       38      Vila Buckingham, linha 179
+Annabel Fuglsang        M       40      Rua Haley, linha 176
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ head pessoas.txt
+***************
+Para ir até a rua em que uma pessoa mora, utilize o arquivo com o nome da
+rua, localizado no subdiretório "ruas".
+
+Para bater na porta da pessoa e investigar, leia o número da linha retirado
+deste arquivo.
+
+Se o conteúdo de uma linha não fizer nenhum sentido, você está na linha errada.
+***************
+
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./ruas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ ls
+Alameda_Hooten             Avenida_Sammett         Parque_Wilkinson    Rua_Clay        Rua_Fowler     Rua_Miles             Rua_Rozella     Rua_Wiget            Travessa_Forestvale      Travessa_Supple
+Alameda_Lineham            Avenida_Taunton         Rua_Abbot           Rua_Claybourne  Rua_Gerard     Rua_Moloney           Rua_Saco        Rua_Wiggin           Travessa_Frontage        Travessa_Victory
+Alameda_Saint_Saveur       Avenida_Warren          Rua_Acton           Rua_Cook        Rua_Granby     Rua_Mozart            Rua_Salutation  Rua_Willet           Travessa_Greendale       Travessa_Wallingford
+Alameda_Senders            Avenida_Wheatland       Rua_Alaric          Rua_Cornelia    Rua_Groveland  Rua_Mystic            Rua_Saunders    Rua_Winter           Travessa_Gretter         Travessa_Wilcox
+Alameda_Unity              Avenida_Willowdean      Rua_Albany          Rua_Corwin      Rua_Haley      Rua_Nazing            Rua_Scotia      Rua_Woodcliff        Travessa_Harding         Travessa_Williston
+Avenida_Bartlett           Avenida_Wilmington      Rua_Aldworth        Rua_Culbert     Rua_Hazel      Rua_New_Minton        Rua_Selwyn      Rua_Worrell          Travessa_High            Vila_Buckingham
+Avenida_Bellevue           Avenida_Wooddale        Rua_Alpine          Rua_Dacia       Rua_Hazelton   Rua_North_Washington  Rua_Sheldon     Travessa_Addington   Travessa_Jacqueline      Vila_Hart.txt
+Avenida_Bertson            Avenida_Wycliff         Rua_Aramon          Rua_Dalton      Rua_Hobart     Rua_Norton            Rua_Silver      Travessa_Andover     Travessa_John_Alden      Vila_Island_View
+Avenida_Blue_Hill          Devine_Way              Rua_Arcola          Rua_Davenport   Rua_Hollander  Rua_Oakley            Rua_Sparrow     Travessa_Ansonia     Travessa_Kinross         Vila_Jamaica
+Avenida_Brookline          Grampian_Way            Rua_Auriga          Rua_Dewar       Rua_Hopedale   Rua_Pinewood          Rua_Spaulding   Travessa_Appleton    Travessa_Laban_Pratt     Vila_King
+Avenida_Cardinal_Medeiros  Gray_Gardens_East       Rua_B               Rua_Doane       Rua_Hull       Rua_Plain             Rua_Standard    Travessa_Atwood      Travessa_Leseur          Vila_Oak
+Avenida_Cerdan             Hadassah_Way            Rua_Ballard         Rua_Dock        Rua_Jacob      Rua_Plainfield        Rua_Staniford   Travessa_Avalon      Travessa_Meadowview      Vila_Randlett
+Avenida_Dana               Harbor_Point_Boulevard  Rua_Bicknell        Rua_Dorrance    Rua_Jersey     Rua_Potosi            Rua_Story       Travessa_Bothwell    Travessa_Mount_Ash       Vila_Terrace
+Avenida_Glenville          Largo_Clipper_Ship      Rua_Bobolink        Rua_Dover       Rua_Jeshurun   Rua_Proctor           Rua_Tennyson    Travessa_Bournedale  Travessa_Mount_Ida       Vila_Trinity
+Avenida_Glenwood           Largo_Gillespies        Rua_Boston          Rua_Dresser     Rua_Judge      Rua_Rena              Rua_Theodore    Travessa_Burwell     Travessa_Myles_Standish  Vila_Wesley
+Avenida_High_View          Largo_Peacock           Rua_Boynton         Rua_Elmore      Rua_June       Rua_Renfrew           Rua_Tolman      Travessa_Cadbury     Travessa_Newcastle
+Avenida_Kearsarge          Largo_Vassal            Rua_Brinton         Rua_Enterprise  Rua_Knoll      Rua_Richardson        Rua_Topeka      Travessa_Cheverus    Travessa_Oliva
+Avenida_Manila             Mamelon_Circle          Rua_Bristol         Rua_Estrella    Rua_Lovis      Rua_Richmond          Rua_Trapelo     Travessa_Drumlin     Travessa_Orchard
+Avenida_Michigan           Manton_Terrace          Rua_Broad_Canal     Rua_Fairfield   Rua_Lynde      Rua_River             Rua_Trident     Travessa_Dunstable   Travessa_Paragon
+Avenida_Mountain           Newcroft_Circle         Rua_Brookdale       Rua_Fay         Rua_Lynn       Rua_Rivermoor         Rua_Vinton      Travessa_Embassy     Travessa_Peter_Parley
+Avenida_New_Park           Parque_Balmoral         Rua_Cardington      Rua_Fayston     Rua_Marney     Rua_Rockmere          Rua_Vista       Travessa_Esther      Travessa_Priscilla
+Avenida_Oak_Hill           Parque_Claremont        Rua_Causeway        Rua_Fessenden   Rua_Mattapan   Rua_Rosaria           Rua_Waldeck     Travessa_Eugenia     Travessa_Quarley
+Avenida_Richard            Parque_Merola           Rua_Channel_Center  Rua_Foundry     Rua_May        Rua_Rowe              Rua_Wentworth   Travessa_Faunce      Travessa_Searle
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Vila_Hart.txt-n 40
+head: cannot open 'Vila_Hart.txt-n' for reading: No such file or directory
+head: cannot open '40' for reading: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Vila_Hart.txt -n 40
+downhills exaggerates outgo rebating rhyming militarizes
+rakishly lithographs inserts
+humanism revolt hoggish tuner hoofs frizziest
+strippers toady framers bakes mandate
+pear graver drubbing reinvest abnormality teetotal lend
+stipulate attiring sprint tunnelings sera merrily proofreaders
+enthroning tuber onrushes pat a rows degrades parleyed
+probationer irresponsibility spongier smirking diminished
+stipulations dandle repetitious enervate
+reunion insert unhand heartbeat busheling teakettles dismayed
+plug hates easiest jabbered destining agglutinates
+ambitious swaggering ties annoyed battleground
+intuitively humbugs ribaldry suspend
+bedspreads expansionists restfullest
+dilated outstrips teapot fluoridates shops mammoth
+baron zoos teeter falloffs fishes invalidating
+patrols knelling rosining lightness unburden
+surfeited absurdity plexus rebuses leaking standing
+sizable punter bagginess dissenters
+postmarking spades overdraft pointillism
+stymie treadles extortionists dietitians agonies spitefuller
+multiplied submits despotism adventurous ballsier
+parody mania leftism tranquilize sexpots stupor parleying
+triumphing whiskered razing danger preordains
+faker preparatory gabbing mavens vamped
+idles tents oratorios butternuts upholsterers sassafras
+damnedest apologists inveigh
+propriety tossed parallelling town kinkier quarantine
+oxymoron nonmembers taproots
+snakebite dramatizing dawdling enlightening
+swastikas fragrant voluble stowing
+grammarian shah ambushed alines varmints doze detains
+wondrous uphold tests appetites wilier beautifiers
+drifts dosages leprosy rashers badmouth jugglers
+snot appals primes whet annular tonality
+shivery kingdom supplements envying
+the slayer gesture waged twenties ratifying baling mortals
+doggie probationary demurer fatness
+stupendous prolonged smog naps
+LEIA A ENTREVISTA #47246024
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ ls
+Vila_Hart.txt        entrevista-1205060   entrevista-2058907   entrevista-301018    entrevista-3871205   entrevista-496772    entrevista-5905106   entrevista-706620    entrevista-812725    entrevista-9185205
+entrevista-000296    entrevista-1250176   entrevista-210355    entrevista-30259493  entrevista-3871242   entrevista-498331    entrevista-591273    entrevista-707438    entrevista-81443363  entrevista-920304
+entrevista-00448418  entrevista-125204    entrevista-218131    entrevista-3049045   entrevista-38899905  entrevista-499096    entrevista-5993978   entrevista-708943    entrevista-822576    entrevista-92391023
+entrevista-00502304  entrevista-125271    entrevista-221039    entrevista-305694    entrevista-3917097   entrevista-50168425  entrevista-60081985  entrevista-7103823   entrevista-8245680   entrevista-92670500
+entrevista-005702    entrevista-1269181   entrevista-223913    entrevista-305949    entrevista-391811    entrevista-50291987  entrevista-604403    entrevista-71186817  entrevista-825165    entrevista-927642
+entrevista-00617019  entrevista-1310392   entrevista-2277882   entrevista-306616    entrevista-39481114  entrevista-504687    entrevista-608607    entrevista-71226767  entrevista-82705993  entrevista-9332386
+entrevista-00805135  entrevista-13768464  entrevista-229443    entrevista-3074127   entrevista-39825862  entrevista-509105    entrevista-6093093   entrevista-71298441  entrevista-831512    entrevista-9346061
+entrevista-016463    entrevista-13889608  entrevista-23167806  entrevista-3099757   entrevista-40534453  entrevista-5143029   entrevista-618764    entrevista-7180973   entrevista-833367    entrevista-93473333
+entrevista-020337    entrevista-13920860  entrevista-2326746   entrevista-312546    entrevista-40610944  entrevista-514793    entrevista-6203192   entrevista-71993338  entrevista-838259    entrevista-93696502
+entrevista-022751    entrevista-1395414   entrevista-23371263  entrevista-3128999   entrevista-409731    entrevista-52280505  entrevista-628618    entrevista-720268    entrevista-8387710   entrevista-938991
+entrevista-0234126   entrevista-141030    entrevista-233800    entrevista-3140662   entrevista-41553314  entrevista-528044    entrevista-63308519  entrevista-7254073   entrevista-8402388   entrevista-9408565
+entrevista-02422821  entrevista-14153840  entrevista-2415821   entrevista-31635890  entrevista-416243    entrevista-529706    entrevista-637657    entrevista-728181    entrevista-8421696   entrevista-94126412
+entrevista-0251720   entrevista-144873    entrevista-243703    entrevista-3201508   entrevista-41814745  entrevista-53318557  entrevista-637928    entrevista-730123    entrevista-8464899   entrevista-9437737
+entrevista-03098229  entrevista-14590717  entrevista-2481877   entrevista-322305    entrevista-4204949   entrevista-535181    entrevista-638121    entrevista-73035802  entrevista-84688694  entrevista-944493
+entrevista-0315125   entrevista-147283    entrevista-250112    entrevista-32365018  entrevista-42161907  entrevista-5372865   entrevista-6417794   entrevista-7305678   entrevista-849256    entrevista-9446528
+entrevista-03316077  entrevista-15187437  entrevista-253705    entrevista-324389    entrevista-4223536   entrevista-538900    entrevista-645385    entrevista-73585672  entrevista-85262552  entrevista-9501580
+entrevista-034070    entrevista-15354942  entrevista-255531    entrevista-325611    entrevista-4225866   entrevista-54026669  entrevista-6553472   entrevista-737609    entrevista-8531248   entrevista-95095182
+entrevista-0349327   entrevista-1536668   entrevista-25582311  entrevista-32639981  entrevista-42396365  entrevista-541518    entrevista-65792229  entrevista-7422077   entrevista-856221    entrevista-95601730
+entrevista-04393507  entrevista-155049    entrevista-25834905  entrevista-32712166  entrevista-4262657   entrevista-5455315   entrevista-659803    entrevista-74225310  entrevista-8586380   entrevista-9618669
+entrevista-044492    entrevista-1578206   entrevista-259909    entrevista-331178    entrevista-42934869  entrevista-54619323  entrevista-66101490  entrevista-7469675   entrevista-861780    entrevista-9620713
+entrevista-0462097   entrevista-159848    entrevista-2601508   entrevista-332596    entrevista-4299898   entrevista-54851634  entrevista-66282920  entrevista-7541406   entrevista-862173    entrevista-9651888
+entrevista-049721    entrevista-16098538  entrevista-26373485  entrevista-33399976  entrevista-4335306   entrevista-549055    entrevista-6643191   entrevista-75434722  entrevista-862717    entrevista-9666149
+entrevista-05297663  entrevista-1642421   entrevista-2642139   entrevista-340396    entrevista-4366523   entrevista-55382746  entrevista-67279454  entrevista-755037    entrevista-8631232   entrevista-97043057
+entrevista-06032377  entrevista-1643440   entrevista-27042476  entrevista-34041151  entrevista-44533008  entrevista-55410365  entrevista-673985    entrevista-75633580  entrevista-86395001  entrevista-9709892
+entrevista-0613334   entrevista-16889008  entrevista-27504937  entrevista-342393    entrevista-4463090   entrevista-55435298  entrevista-676473    entrevista-7580872   entrevista-865918    entrevista-9711852
+entrevista-066291    entrevista-17248453  entrevista-275706    entrevista-34359897  entrevista-448086    entrevista-55477243  entrevista-67790846  entrevista-77014856  entrevista-867999    entrevista-9712946
+entrevista-071537    entrevista-17343208  entrevista-279087    entrevista-344331    entrevista-45615686  entrevista-555536    entrevista-680549    entrevista-770439    entrevista-8700943   entrevista-9728756
+entrevista-0732631   entrevista-174898    entrevista-280877    entrevista-34690644  entrevista-457117    entrevista-5581158   entrevista-6808205   entrevista-77135281  entrevista-87126591  entrevista-97393699
+entrevista-07497003  entrevista-1767435   entrevista-2834518   entrevista-347303    entrevista-457451    entrevista-55841398  entrevista-68195573  entrevista-7791374   entrevista-871877    entrevista-97409610
+entrevista-0768255   entrevista-17827186  entrevista-284560    entrevista-351963    entrevista-466195    entrevista-55984022  entrevista-68488577  entrevista-780255    entrevista-879569    entrevista-980963
+entrevista-092423    entrevista-179719    entrevista-2846076   entrevista-353218    entrevista-4673074   entrevista-565396    entrevista-68764140  entrevista-7863761   entrevista-8819490   entrevista-982013
+entrevista-0953437   entrevista-1811770   entrevista-289524    entrevista-353467    entrevista-46773428  entrevista-566707    entrevista-6884359   entrevista-789564    entrevista-891720    entrevista-9824821
+entrevista-096267    entrevista-18193261  entrevista-290346    entrevista-354262    entrevista-47246024  entrevista-56784802  entrevista-6894000   entrevista-791289    entrevista-896668    entrevista-98912259
+entrevista-102490    entrevista-1823688   entrevista-291440    entrevista-3588302   entrevista-4735823   entrevista-56892213  entrevista-69170457  entrevista-79360358  entrevista-9004767   entrevista-9901455
+entrevista-109118    entrevista-18270219  entrevista-2922290   entrevista-3609204   entrevista-4765278   entrevista-57236791  entrevista-6933068   entrevista-79411932  entrevista-901603    entrevista-9912172
+entrevista-1108561   entrevista-18441251  entrevista-29316965  entrevista-36398447  entrevista-476744    entrevista-5739404   entrevista-699607    entrevista-794525    entrevista-901645    entrevista-992072
+entrevista-114661    entrevista-1850922   entrevista-2939888   entrevista-364735    entrevista-478217    entrevista-5766907   entrevista-70067280  entrevista-7959148   entrevista-90394637  entrevista-99643550
+entrevista-11495001  entrevista-1857368   entrevista-296128    entrevista-36527398  entrevista-48088300  entrevista-5774468   entrevista-70199425  entrevista-796439    entrevista-904020    entrevista-9969223
+entrevista-116803    entrevista-1906958   entrevista-29680692  entrevista-376115    entrevista-48148020  entrevista-5782759   entrevista-703831    entrevista-79667499  entrevista-907126    entrevista-999372
+entrevista-11705111  entrevista-191206    entrevista-29741223  entrevista-37747405  entrevista-483817    entrevista-579105    entrevista-704443    entrevista-79935965  entrevista-9074626
+entrevista-11783660  entrevista-19300543  entrevista-2976680   entrevista-3804339   entrevista-485229    entrevista-5835471   entrevista-70458099  entrevista-7998181   entrevista-911451
+entrevista-11817172  entrevista-1933118   entrevista-29838622  entrevista-3824641   entrevista-4950099   entrevista-586668    entrevista-7046684   entrevista-8095917   entrevista-91673757
+entrevista-1186827   entrevista-19577850  entrevista-2995681   entrevista-38299069  entrevista-4961376   entrevista-58910793  entrevista-7066082   entrevista-809922    entrevista-917210
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cat entrevista-47246024
+A Srta. Sun tem cabelo castanho e não é da Nova Zelândia. Não é a testemunha da cafeteria.
+
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Annabel pessoas.txt
+Annabel Sun     F       26      Vila Hart, linha 40
+Oluwasegun Annabel      M       37      Rua Mattapan, linha 173
+Annabel Church  F       38      Vila Buckingham, linha 179
+Annabel Fuglsang        M       40      Rua Haley, linha 176
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./ruas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ ls
+Alameda_Hooten             Avenida_Sammett         Parque_Wilkinson    Rua_Clay        Rua_Fowler     Rua_Miles             Rua_Rozella     Rua_Wiget            Travessa_Forestvale      Travessa_Supple
+Alameda_Lineham            Avenida_Taunton         Rua_Abbot           Rua_Claybourne  Rua_Gerard     Rua_Moloney           Rua_Saco        Rua_Wiggin           Travessa_Frontage        Travessa_Victory
+Alameda_Saint_Saveur       Avenida_Warren          Rua_Acton           Rua_Cook        Rua_Granby     Rua_Mozart            Rua_Salutation  Rua_Willet           Travessa_Greendale       Travessa_Wallingford
+Alameda_Senders            Avenida_Wheatland       Rua_Alaric          Rua_Cornelia    Rua_Groveland  Rua_Mystic            Rua_Saunders    Rua_Winter           Travessa_Gretter         Travessa_Wilcox
+Alameda_Unity              Avenida_Willowdean      Rua_Albany          Rua_Corwin      Rua_Haley      Rua_Nazing            Rua_Scotia      Rua_Woodcliff        Travessa_Harding         Travessa_Williston
+Avenida_Bartlett           Avenida_Wilmington      Rua_Aldworth        Rua_Culbert     Rua_Hazel      Rua_New_Minton        Rua_Selwyn      Rua_Worrell          Travessa_High            Vila_Buckingham
+Avenida_Bellevue           Avenida_Wooddale        Rua_Alpine          Rua_Dacia       Rua_Hazelton   Rua_North_Washington  Rua_Sheldon     Travessa_Addington   Travessa_Jacqueline      Vila_Hart.txt
+Avenida_Bertson            Avenida_Wycliff         Rua_Aramon          Rua_Dalton      Rua_Hobart     Rua_Norton            Rua_Silver      Travessa_Andover     Travessa_John_Alden      Vila_Island_View
+Avenida_Blue_Hill          Devine_Way              Rua_Arcola          Rua_Davenport   Rua_Hollander  Rua_Oakley            Rua_Sparrow     Travessa_Ansonia     Travessa_Kinross         Vila_Jamaica
+Avenida_Brookline          Grampian_Way            Rua_Auriga          Rua_Dewar       Rua_Hopedale   Rua_Pinewood          Rua_Spaulding   Travessa_Appleton    Travessa_Laban_Pratt     Vila_King
+Avenida_Cardinal_Medeiros  Gray_Gardens_East       Rua_B               Rua_Doane       Rua_Hull       Rua_Plain             Rua_Standard    Travessa_Atwood      Travessa_Leseur          Vila_Oak
+Avenida_Cerdan             Hadassah_Way            Rua_Ballard         Rua_Dock        Rua_Jacob      Rua_Plainfield        Rua_Staniford   Travessa_Avalon      Travessa_Meadowview      Vila_Randlett
+Avenida_Dana               Harbor_Point_Boulevard  Rua_Bicknell        Rua_Dorrance    Rua_Jersey     Rua_Potosi            Rua_Story       Travessa_Bothwell    Travessa_Mount_Ash       Vila_Terrace
+Avenida_Glenville          Largo_Clipper_Ship      Rua_Bobolink        Rua_Dover       Rua_Jeshurun   Rua_Proctor           Rua_Tennyson    Travessa_Bournedale  Travessa_Mount_Ida       Vila_Trinity
+Avenida_Glenwood           Largo_Gillespies        Rua_Boston          Rua_Dresser     Rua_Judge      Rua_Rena              Rua_Theodore    Travessa_Burwell     Travessa_Myles_Standish  Vila_Wesley
+Avenida_High_View          Largo_Peacock           Rua_Boynton         Rua_Elmore      Rua_June       Rua_Renfrew           Rua_Tolman      Travessa_Cadbury     Travessa_Newcastle
+Avenida_Kearsarge          Largo_Vassal            Rua_Brinton         Rua_Enterprise  Rua_Knoll      Rua_Richardson        Rua_Topeka      Travessa_Cheverus    Travessa_Oliva
+Avenida_Manila             Mamelon_Circle          Rua_Bristol         Rua_Estrella    Rua_Lovis      Rua_Richmond          Rua_Trapelo     Travessa_Drumlin     Travessa_Orchard
+Avenida_Michigan           Manton_Terrace          Rua_Broad_Canal     Rua_Fairfield   Rua_Lynde      Rua_River             Rua_Trident     Travessa_Dunstable   Travessa_Paragon
+Avenida_Mountain           Newcroft_Circle         Rua_Brookdale       Rua_Fay         Rua_Lynn       Rua_Rivermoor         Rua_Vinton      Travessa_Embassy     Travessa_Peter_Parley
+Avenida_New_Park           Parque_Balmoral         Rua_Cardington      Rua_Fayston     Rua_Marney     Rua_Rockmere          Rua_Vista       Travessa_Esther      Travessa_Priscilla
+Avenida_Oak_Hill           Parque_Claremont        Rua_Causeway        Rua_Fessenden   Rua_Mattapan   Rua_Rosaria           Rua_Waldeck     Travessa_Eugenia     Travessa_Quarley
+Avenida_Richard            Parque_Merola           Rua_Channel_Center  Rua_Foundry     Rua_May        Rua_Rowe              Rua_Wentworth   Travessa_Faunce      Travessa_Searle
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Vila_Buckingham -n 179
+one earthlings startles invitingly pall
+headwaiter mate impregnability
+unmake drainpipe utilities pointillist
+apropos impressively forborne finite exempt
+griming vised thankfully burlap hypertension
+landsliding landfill furlong mittens heartland
+bully tortoise enlargers roamed undressing
+yuks troubleshooting seaboards
+springtime deaves reinitialize puttying
+densities warranties penultimates dehumanizes perorations
+untangles stays smashing spinets breadfruits
+granulating toreadors finishes knob headhunter
+longhairs pennyweights womanizers
+depressive overused disturbs glandular pillowed
+fallibly proportioning settling jumpier
+vagueness lethal alienating potted
+immortalizing parfaits ignited malnutrition
+feisty senseless manly fifths tailspin supposed downstairs
+ringer drainers agiler pinholes reedier
+meekest revolvers gobblers panelists unassigned yew butterfly
+nuts singsonged writs arm dimness
+bearing shags kleptomania sprinted barkers
+augury bullied letups shimming filmy golds
+thunders forbid snowflake unstabler moralist
+torrential attributable poniards newsletter stealthier
+breastplates bundled nationalization
+invaliding fitfully figured keystones
+misdoing unplugged newspapermen grandstand
+shrouding pushed botanists pivots domed
+mealier formerly trivet avenues flukey humorously
+twofold sniffling misdoes intros bookmarked
+subordinated amateur ambition tarpons fluttery
+gassier soldiering irritant wavelengths wriggling
+tarots gruesomely pair minks enrapture
+stupefy dukedoms emanating manikin enshrines
+freaky meditated paginating suddenly farewells presentations
+darted sizes tartly meddlers startled
+strong love thumbnail aquifer samurai
+parleys mobilizing repertoires sanitarium punts
+entwining inkier exterminate remission purblind
+inflammations resist impedes lighthouses allegro
+additions pantomiming wrongdoing natives elusive opals
+finagles assaying raving primmest libel repairable
+gallbladders dismissed girders waxworks tenderly feasibly
+temporaries peephole whams faultfinding metabolizing
+floor huddles refinish flattering swamped
+levied whets undersign bestiary
+auras kite presumes toasty pair loping revelled teas abnormally
+reality polarized preferably nominated
+pawnshops bootie pealed violist haulers haled
+palmettoes waste spot soggier annulled
+steak shrews gunshots foregone kneel
+inlets bran maraud salts hemmed
+poniard mangled dither humblest demitasses proprietary
+augury telemetry starlit landlubbers
+portrayed battleships orderliness salver forming grits
+alleyways disowning blogged argosies
+supervisor adored unequalled dangle nonreturnables
+sixteens defaulted bandoliers turtledove
+gearwheels junks endlessly wear internship timidly maxim
+waver windbreaker sunken disguising importations
+shoots smoggiest lifestyles journeymen
+reffed raft futzing dagger surrealism
+unsupervised disrepute ingeniously annul divining
+expressing rib snorted hexagons sway sharing neurosurgery
+frazzled leaving aqueous stigma punning psalmists
+desirous devaluation pudding alight squealed
+marital unsubstantial peasant drying bee agglomerates
+hansom methought adapts muezzins relish
+eastward maydays gondola burger abstains predetermined gated
+ornithology unarmed godfather roomer penises primitives
+slumber ether mender edgy underhanded ablest affirmatively
+sex barbershops leotards bobolink hormonal sump
+indubitable yardages felons unquestionably versifies infinitesimals
+aliasing inhibiting originally synthesizes
+perjuries goblet pasta moves farrow urged dotes fluffs
+liberals indentation horns erosion harrow snowstorm emulator
+pretending expiation imperialist overdresses
+bookmakers analogues dittoed effigy thunderheads
+employee wafer pessimist alleyway envisages
+orderings bedbug employ muskmelon benumb
+shards ominous bawl worryings refills animators soften
+merrier vanadium provides medleys obstinately summoner
+fold swoons grievously dismantles
+unbroken hothead jessamine yolk loath rake
+bludgeoned inflationary dowdy fingers saunter
+great diminutive puffiness bankbooks
+insolvent more balms millions mommy river sullenest
+intertwines obeisant gallon blame tub seeking firsts
+lingered populates naughty galvanizes postulated
+frailest shin wrestle faking goddamed allergist minute lobotomies
+thrower industriously idolized unabashed understudied
+shaking refereed mullet harmfulness hasp
+tubeless irretrievable transits underwrites drainage
+renegaded bilk gearbox expertise away beating
+rapt preventative freedman trouts insulted peopling pales
+earnest blabbing prohibitionist deserts runway
+patents idiot marvel deadens shad sluggers essay talkative
+sneer lows sidled sparingly ink geranium lighthearted
+boudoirs merry juniper while liquifies phobias goad peanuts
+hesitating inverse nighttime
+loosely impish threaded formlessness signet
+knotted pursues sightseer history software
+admonishment underskirt speedway deviate fags
+sandblasting plodding faggots grungy eventuality
+workmen extemporaneous espouses straitening laxatives
+harangue summing binderies membership
+huskies sidesaddles restoration tawdriest gazillions
+liven delimit jibe profited butterfly faithful
+iodize wheezier ministration hotbed rehabbing nuzzle
+esquire swallows smelly grounder shimmering sharpers hexed
+legionnaires workdays rinds personality
+governor floury earrings overusing
+winsomer falsity paradigm rows wiry alas worship
+spears goaded took despaired betrothal mink doled penetrative
+ingot tasting uprights barks sottish troubleshooter
+persevere ping deafening kisser innovators
+gaudier noiselessly glamorously quasar beeping yesterdays
+spinal klutzes yeastier initializing
+foetuses brews blunderbuss emitting
+hillier streak opines retirement straightedges nontransferable
+mending envisions gizmos drags finnier wildest
+adder malingerers euphony antiphonal departs spitfires
+hypes dye illuminations disablement
+sender waned bottomless saintlier lades plethora
+shenanigan larynges penguin heatstroke
+steins exiles underestimating guts billet flabbergasting
+sieges flawlessly serialized kippers
+enfeeble weathered bedridden liquidations
+flints winners unfairest damaged
+partnered pilaws hogs pluming avenge
+tanker forwent sag pheromone snowdrifts syphons
+mimes mountaineers exalted disfigure shelves nimble
+flusters derivable potato establishment
+regimen betterment sarape misused balladeer pilling
+besiegers whitens dinky stupid
+kettle borax partnering preppiest
+fisherman dappling mustier fobs figuratively orthopaedists
+jumpiest tundra hybridizing
+inexhaustibly thrower metaphors intones slanted
+insinuated garrison prettifying attests
+stemming shrewdness prigs workweek feebleness abiding distrust
+sternest rowel debater peas adversely enshrouds
+premiss nowhere billion gatherings fetid traded
+misappropriation donations printers
+dethronement holler spurned divisors
+reverts plaza obsequiously permutation
+grandpas tyrants metastases personae hauler eyelash
+outrage shelters soured surlier metronome moonlighted
+mailmen maneuverable mattered seeding dehumanizes
+spiniest dents weightless kookaburras misprinted disorders
+intermediary selling jersey polymaths empathizing
+doubling peaked owlish byline levitates suspense relabels
+autumns wiping dhotis damming twentieth proportion
+potentate bribes rifer moderate verbena desire framing
+twaddle polite pretext mazourka situated
+bilking darling tempera stresses earmarking
+breezes fretted exhumed fertile
+vineyards gingerbread ridgepoles helixes
+deal heppest malignantly tallest ebony
+flexible espressos prioresses linoleum deposed tourism
+sophomore filtering prostitute wasps
+parboiling sine rain unprofessional
+surrey mudslide brilliants planing derail wilder
+environmentally professor frenzies trolled
+watermelons garrisoning imprisonments typified
+busied besetting founders flurried state trill
+hyphened flashiest advertise byline patrons fighter goldsmith
+sightread teazles footfall washbasin molesting
+grainiest lobbing shrouded largest jump geometries
+eluded sophism stages pertly sewerage biplanes maturer travelogs
+fords plaque droned spars misleading sunburn
+serenely shits dialyses roistering registrars pointillists
+bales napes warts mammary referrals fisherman training
+panting battalion greedier allergens orotund
+headers badge bullhorn agglutinating bearable
+analogs departing anguished nylons
+whitewall napkins overheats embittering grimmer beamed
+LEIA A ENTREVISTA #699607
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ cd  ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ ls
+Vila_Hart.txt        entrevista-1205060   entrevista-2058907   entrevista-301018    entrevista-3871205   entrevista-496772    entrevista-5905106   entrevista-706620    entrevista-812725    entrevista-9185205
+entrevista-000296    entrevista-1250176   entrevista-210355    entrevista-30259493  entrevista-3871242   entrevista-498331    entrevista-591273    entrevista-707438    entrevista-81443363  entrevista-920304
+entrevista-00448418  entrevista-125204    entrevista-218131    entrevista-3049045   entrevista-38899905  entrevista-499096    entrevista-5993978   entrevista-708943    entrevista-822576    entrevista-92391023
+entrevista-00502304  entrevista-125271    entrevista-221039    entrevista-305694    entrevista-3917097   entrevista-50168425  entrevista-60081985  entrevista-7103823   entrevista-8245680   entrevista-92670500
+entrevista-005702    entrevista-1269181   entrevista-223913    entrevista-305949    entrevista-391811    entrevista-50291987  entrevista-604403    entrevista-71186817  entrevista-825165    entrevista-927642
+entrevista-00617019  entrevista-1310392   entrevista-2277882   entrevista-306616    entrevista-39481114  entrevista-504687    entrevista-608607    entrevista-71226767  entrevista-82705993  entrevista-9332386
+entrevista-00805135  entrevista-13768464  entrevista-229443    entrevista-3074127   entrevista-39825862  entrevista-509105    entrevista-6093093   entrevista-71298441  entrevista-831512    entrevista-9346061
+entrevista-016463    entrevista-13889608  entrevista-23167806  entrevista-3099757   entrevista-40534453  entrevista-5143029   entrevista-618764    entrevista-7180973   entrevista-833367    entrevista-93473333
+entrevista-020337    entrevista-13920860  entrevista-2326746   entrevista-312546    entrevista-40610944  entrevista-514793    entrevista-6203192   entrevista-71993338  entrevista-838259    entrevista-93696502
+entrevista-022751    entrevista-1395414   entrevista-23371263  entrevista-3128999   entrevista-409731    entrevista-52280505  entrevista-628618    entrevista-720268    entrevista-8387710   entrevista-938991
+entrevista-0234126   entrevista-141030    entrevista-233800    entrevista-3140662   entrevista-41553314  entrevista-528044    entrevista-63308519  entrevista-7254073   entrevista-8402388   entrevista-9408565
+entrevista-02422821  entrevista-14153840  entrevista-2415821   entrevista-31635890  entrevista-416243    entrevista-529706    entrevista-637657    entrevista-728181    entrevista-8421696   entrevista-94126412
+entrevista-0251720   entrevista-144873    entrevista-243703    entrevista-3201508   entrevista-41814745  entrevista-53318557  entrevista-637928    entrevista-730123    entrevista-8464899   entrevista-9437737
+entrevista-03098229  entrevista-14590717  entrevista-2481877   entrevista-322305    entrevista-4204949   entrevista-535181    entrevista-638121    entrevista-73035802  entrevista-84688694  entrevista-944493
+entrevista-0315125   entrevista-147283    entrevista-250112    entrevista-32365018  entrevista-42161907  entrevista-5372865   entrevista-6417794   entrevista-7305678   entrevista-849256    entrevista-9446528
+entrevista-03316077  entrevista-15187437  entrevista-253705    entrevista-324389    entrevista-4223536   entrevista-538900    entrevista-645385    entrevista-73585672  entrevista-85262552  entrevista-9501580
+entrevista-034070    entrevista-15354942  entrevista-255531    entrevista-325611    entrevista-4225866   entrevista-54026669  entrevista-6553472   entrevista-737609    entrevista-8531248   entrevista-95095182
+entrevista-0349327   entrevista-1536668   entrevista-25582311  entrevista-32639981  entrevista-42396365  entrevista-541518    entrevista-65792229  entrevista-7422077   entrevista-856221    entrevista-95601730
+entrevista-04393507  entrevista-155049    entrevista-25834905  entrevista-32712166  entrevista-4262657   entrevista-5455315   entrevista-659803    entrevista-74225310  entrevista-8586380   entrevista-9618669
+entrevista-044492    entrevista-1578206   entrevista-259909    entrevista-331178    entrevista-42934869  entrevista-54619323  entrevista-66101490  entrevista-7469675   entrevista-861780    entrevista-9620713
+entrevista-0462097   entrevista-159848    entrevista-2601508   entrevista-332596    entrevista-4299898   entrevista-54851634  entrevista-66282920  entrevista-7541406   entrevista-862173    entrevista-9651888
+entrevista-049721    entrevista-16098538  entrevista-26373485  entrevista-33399976  entrevista-4335306   entrevista-549055    entrevista-6643191   entrevista-75434722  entrevista-862717    entrevista-9666149
+entrevista-05297663  entrevista-1642421   entrevista-2642139   entrevista-340396    entrevista-4366523   entrevista-55382746  entrevista-67279454  entrevista-755037    entrevista-8631232   entrevista-97043057
+entrevista-06032377  entrevista-1643440   entrevista-27042476  entrevista-34041151  entrevista-44533008  entrevista-55410365  entrevista-673985    entrevista-75633580  entrevista-86395001  entrevista-9709892
+entrevista-0613334   entrevista-16889008  entrevista-27504937  entrevista-342393    entrevista-4463090   entrevista-55435298  entrevista-676473    entrevista-7580872   entrevista-865918    entrevista-9711852
+entrevista-066291    entrevista-17248453  entrevista-275706    entrevista-34359897  entrevista-448086    entrevista-55477243  entrevista-67790846  entrevista-77014856  entrevista-867999    entrevista-9712946
+entrevista-071537    entrevista-17343208  entrevista-279087    entrevista-344331    entrevista-45615686  entrevista-555536    entrevista-680549    entrevista-770439    entrevista-8700943   entrevista-9728756
+entrevista-0732631   entrevista-174898    entrevista-280877    entrevista-34690644  entrevista-457117    entrevista-5581158   entrevista-6808205   entrevista-77135281  entrevista-87126591  entrevista-97393699
+entrevista-07497003  entrevista-1767435   entrevista-2834518   entrevista-347303    entrevista-457451    entrevista-55841398  entrevista-68195573  entrevista-7791374   entrevista-871877    entrevista-97409610
+entrevista-0768255   entrevista-17827186  entrevista-284560    entrevista-351963    entrevista-466195    entrevista-55984022  entrevista-68488577  entrevista-780255    entrevista-879569    entrevista-980963
+entrevista-092423    entrevista-179719    entrevista-2846076   entrevista-353218    entrevista-4673074   entrevista-565396    entrevista-68764140  entrevista-7863761   entrevista-8819490   entrevista-982013
+entrevista-0953437   entrevista-1811770   entrevista-289524    entrevista-353467    entrevista-46773428  entrevista-566707    entrevista-6884359   entrevista-789564    entrevista-891720    entrevista-9824821
+entrevista-096267    entrevista-18193261  entrevista-290346    entrevista-354262    entrevista-47246024  entrevista-56784802  entrevista-6894000   entrevista-791289    entrevista-896668    entrevista-98912259
+entrevista-102490    entrevista-1823688   entrevista-291440    entrevista-3588302   entrevista-4735823   entrevista-56892213  entrevista-69170457  entrevista-79360358  entrevista-9004767   entrevista-9901455
+entrevista-109118    entrevista-18270219  entrevista-2922290   entrevista-3609204   entrevista-4765278   entrevista-57236791  entrevista-6933068   entrevista-79411932  entrevista-901603    entrevista-9912172
+entrevista-1108561   entrevista-18441251  entrevista-29316965  entrevista-36398447  entrevista-476744    entrevista-5739404   entrevista-699607    entrevista-794525    entrevista-901645    entrevista-992072
+entrevista-114661    entrevista-1850922   entrevista-2939888   entrevista-364735    entrevista-478217    entrevista-5766907   entrevista-70067280  entrevista-7959148   entrevista-90394637  entrevista-99643550
+entrevista-11495001  entrevista-1857368   entrevista-296128    entrevista-36527398  entrevista-48088300  entrevista-5774468   entrevista-70199425  entrevista-796439    entrevista-904020    entrevista-9969223
+entrevista-116803    entrevista-1906958   entrevista-29680692  entrevista-376115    entrevista-48148020  entrevista-5782759   entrevista-703831    entrevista-79667499  entrevista-907126    entrevista-999372
+entrevista-11705111  entrevista-191206    entrevista-29741223  entrevista-37747405  entrevista-483817    entrevista-579105    entrevista-704443    entrevista-79935965  entrevista-9074626
+entrevista-11783660  entrevista-19300543  entrevista-2976680   entrevista-3804339   entrevista-485229    entrevista-5835471   entrevista-70458099  entrevista-7998181   entrevista-911451
+entrevista-11817172  entrevista-1933118   entrevista-29838622  entrevista-3824641   entrevista-4950099   entrevista-586668    entrevista-7046684   entrevista-8095917   entrevista-91673757
+entrevista-1186827   entrevista-19577850  entrevista-2995681   entrevista-38299069  entrevista-4961376   entrevista-58910793  entrevista-7066082   entrevista-809922    entrevista-917210
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cat entrevista-699607
+Entrevistamos a Srta. Church às 14:04. A testemunha afirmou que não viu ninguém com as características do atirador e que saiu correndo assim que os tiros foram disparados.
+
+No entanto, ela reportou que viu um carro fugindo da cena do crime. Descreveu como um Honda azul, com placa que começa com "L337" e termina com "9".
+
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Honda automoveis.txt
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+Marca: Honda
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ head automoveis.txt -n 5
+***************
+Informações de automóveis e proprietários obtidas com o
+Departamento de Trânsito da Cidade do Terminal.
+***************
+
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ head automoveis.txt -n 10
+***************
+Informações de automóveis e proprietários obtidas com o
+Departamento de Trânsito da Cidade do Terminal.
+***************
+
+Placa T3YUHF6
+Marca: Toyota
+Cor: Amarela
+Proprietário: Jianbo Megannem
+Altura: 1,68 m
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337 automoveis.txt
+Placa L337ZR9
+Placa L337P89
+Placa L337GX9
+Placa L337QE9
+Placa L337GB9
+Placa L337OI9
+Placa L337X19
+Placa L337539
+Placa L3373U9
+Placa L337369
+Placa L337DV9
+Placa L3375A9
+Placa L337WR9
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337 Honda Azul automoveis.txt
+grep: Honda: No such file or directory
+grep: Azul: No such file or directory
+automoveis.txt:Placa L337ZR9
+automoveis.txt:Placa L337P89
+automoveis.txt:Placa L337GX9
+automoveis.txt:Placa L337QE9
+automoveis.txt:Placa L337GB9
+automoveis.txt:Placa L337OI9
+automoveis.txt:Placa L337X19
+automoveis.txt:Placa L337539
+automoveis.txt:Placa L3373U9
+automoveis.txt:Placa L337369
+automoveis.txt:Placa L337DV9
+automoveis.txt:Placa L3375A9
+automoveis.txt:Placa L337WR9
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337ZR9 automoveis.txt -B 10 -A 10
+Altura: 1,65 m
+Peso: 108,4 kg
+
+Placa 08HOIAM
+Marca: Ford
+Cor: Laranja
+Proprietário: Bruno Oliver
+Altura: 1,93 m
+Peso: 108,0 kg
+
+Placa L337ZR9
+Marca: Honda
+Cor: Vermelho
+Proprietário: Katie Park
+Altura: 1,88 m
+Peso: 85,7 kg
+
+Placa FF9UF7C
+Marca: Fiat
+Cor: Amarela
+Proprietário: Rafaela Moudatir
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337P89 automoveis.txt -B 10 -A 10
+Altura: 1,86 m
+Peso: 81,2 kg
+
+Placa 1OGIFX7
+Marca: BMW
+Cor: Laranja
+Proprietário: Deni Iovu
+Altura: 1,53 m
+Peso: 68,0 kg
+
+Placa L337P89
+Marca: Honda
+Cor: Petróleo
+Proprietário: Mike Bostock
+Altura: 1,93 m
+Peso: 78,5 kg
+
+Placa JBGQDXM
+Marca: Subaru
+Cor: Amarela
+Proprietário: Mhairi French
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337GX9 automoveis.txt -B 10 -A 10
+Altura: 1,93 m
+Peso: 63,5 kg
+
+Placa AKFSAJP
+Marca: Jaguar
+Cor: Laranja
+Proprietário: Yasemin Voronova
+Altura: 1,63 m
+Peso: 74,4 kg
+
+Placa L337GX9
+Marca: Mazda
+Cor: Laranja
+Proprietário: John Keefe
+Altura: 1,93 m
+Peso: 83,9 kg
+
+Placa F3TYJET
+Marca: Ford
+Cor: Dourada
+Proprietário: Maximiliano Matsumoto
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337QE9 automoveis.txt -B 10 -A 10
+Altura: 1,65 m
+Peso: 77,1 kg
+
+Placa IAK7873
+Marca: Cadillac
+Cor: Vermelho
+Proprietário: Yunlei Xu
+Altura: 1,53 m
+Peso: 97,1 kg
+
+Placa L337QE9
+Marca: Honda
+Cor: Azul
+Proprietário: Erika Owens
+Altura: 1,96 m
+Peso: 99,8 kg
+
+Placa 3PODXFM
+Marca: Toyota
+Cor: Petróleo
+Proprietário: Geraint Traore
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./pessoas
+bash: cd: ./pessoas: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Erika pessoas.txt
+Erika Owens     F       56      Rua Trapelo, linha 98
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ head Rua_Trapelo -n 98
+head: cannot open 'Rua_Trapelo' for reading: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ ls
+Vila_Hart.txt        entrevista-1205060   entrevista-2058907   entrevista-301018    entrevista-3871205   entrevista-496772    entrevista-5905106   entrevista-706620    entrevista-812725    entrevista-9185205
+entrevista-000296    entrevista-1250176   entrevista-210355    entrevista-30259493  entrevista-3871242   entrevista-498331    entrevista-591273    entrevista-707438    entrevista-81443363  entrevista-920304
+entrevista-00448418  entrevista-125204    entrevista-218131    entrevista-3049045   entrevista-38899905  entrevista-499096    entrevista-5993978   entrevista-708943    entrevista-822576    entrevista-92391023
+entrevista-00502304  entrevista-125271    entrevista-221039    entrevista-305694    entrevista-3917097   entrevista-50168425  entrevista-60081985  entrevista-7103823   entrevista-8245680   entrevista-92670500
+entrevista-005702    entrevista-1269181   entrevista-223913    entrevista-305949    entrevista-391811    entrevista-50291987  entrevista-604403    entrevista-71186817  entrevista-825165    entrevista-927642
+entrevista-00617019  entrevista-1310392   entrevista-2277882   entrevista-306616    entrevista-39481114  entrevista-504687    entrevista-608607    entrevista-71226767  entrevista-82705993  entrevista-9332386
+entrevista-00805135  entrevista-13768464  entrevista-229443    entrevista-3074127   entrevista-39825862  entrevista-509105    entrevista-6093093   entrevista-71298441  entrevista-831512    entrevista-9346061
+entrevista-016463    entrevista-13889608  entrevista-23167806  entrevista-3099757   entrevista-40534453  entrevista-5143029   entrevista-618764    entrevista-7180973   entrevista-833367    entrevista-93473333
+entrevista-020337    entrevista-13920860  entrevista-2326746   entrevista-312546    entrevista-40610944  entrevista-514793    entrevista-6203192   entrevista-71993338  entrevista-838259    entrevista-93696502
+entrevista-022751    entrevista-1395414   entrevista-23371263  entrevista-3128999   entrevista-409731    entrevista-52280505  entrevista-628618    entrevista-720268    entrevista-8387710   entrevista-938991
+entrevista-0234126   entrevista-141030    entrevista-233800    entrevista-3140662   entrevista-41553314  entrevista-528044    entrevista-63308519  entrevista-7254073   entrevista-8402388   entrevista-9408565
+entrevista-02422821  entrevista-14153840  entrevista-2415821   entrevista-31635890  entrevista-416243    entrevista-529706    entrevista-637657    entrevista-728181    entrevista-8421696   entrevista-94126412
+entrevista-0251720   entrevista-144873    entrevista-243703    entrevista-3201508   entrevista-41814745  entrevista-53318557  entrevista-637928    entrevista-730123    entrevista-8464899   entrevista-9437737
+entrevista-03098229  entrevista-14590717  entrevista-2481877   entrevista-322305    entrevista-4204949   entrevista-535181    entrevista-638121    entrevista-73035802  entrevista-84688694  entrevista-944493
+entrevista-0315125   entrevista-147283    entrevista-250112    entrevista-32365018  entrevista-42161907  entrevista-5372865   entrevista-6417794   entrevista-7305678   entrevista-849256    entrevista-9446528
+entrevista-03316077  entrevista-15187437  entrevista-253705    entrevista-324389    entrevista-4223536   entrevista-538900    entrevista-645385    entrevista-73585672  entrevista-85262552  entrevista-9501580
+entrevista-034070    entrevista-15354942  entrevista-255531    entrevista-325611    entrevista-4225866   entrevista-54026669  entrevista-6553472   entrevista-737609    entrevista-8531248   entrevista-95095182
+entrevista-0349327   entrevista-1536668   entrevista-25582311  entrevista-32639981  entrevista-42396365  entrevista-541518    entrevista-65792229  entrevista-7422077   entrevista-856221    entrevista-95601730
+entrevista-04393507  entrevista-155049    entrevista-25834905  entrevista-32712166  entrevista-4262657   entrevista-5455315   entrevista-659803    entrevista-74225310  entrevista-8586380   entrevista-9618669
+entrevista-044492    entrevista-1578206   entrevista-259909    entrevista-331178    entrevista-42934869  entrevista-54619323  entrevista-66101490  entrevista-7469675   entrevista-861780    entrevista-9620713
+entrevista-0462097   entrevista-159848    entrevista-2601508   entrevista-332596    entrevista-4299898   entrevista-54851634  entrevista-66282920  entrevista-7541406   entrevista-862173    entrevista-9651888
+entrevista-049721    entrevista-16098538  entrevista-26373485  entrevista-33399976  entrevista-4335306   entrevista-549055    entrevista-6643191   entrevista-75434722  entrevista-862717    entrevista-9666149
+entrevista-05297663  entrevista-1642421   entrevista-2642139   entrevista-340396    entrevista-4366523   entrevista-55382746  entrevista-67279454  entrevista-755037    entrevista-8631232   entrevista-97043057
+entrevista-06032377  entrevista-1643440   entrevista-27042476  entrevista-34041151  entrevista-44533008  entrevista-55410365  entrevista-673985    entrevista-75633580  entrevista-86395001  entrevista-9709892
+entrevista-0613334   entrevista-16889008  entrevista-27504937  entrevista-342393    entrevista-4463090   entrevista-55435298  entrevista-676473    entrevista-7580872   entrevista-865918    entrevista-9711852
+entrevista-066291    entrevista-17248453  entrevista-275706    entrevista-34359897  entrevista-448086    entrevista-55477243  entrevista-67790846  entrevista-77014856  entrevista-867999    entrevista-9712946
+entrevista-071537    entrevista-17343208  entrevista-279087    entrevista-344331    entrevista-45615686  entrevista-555536    entrevista-680549    entrevista-770439    entrevista-8700943   entrevista-9728756
+entrevista-0732631   entrevista-174898    entrevista-280877    entrevista-34690644  entrevista-457117    entrevista-5581158   entrevista-6808205   entrevista-77135281  entrevista-87126591  entrevista-97393699
+entrevista-07497003  entrevista-1767435   entrevista-2834518   entrevista-347303    entrevista-457451    entrevista-55841398  entrevista-68195573  entrevista-7791374   entrevista-871877    entrevista-97409610
+entrevista-0768255   entrevista-17827186  entrevista-284560    entrevista-351963    entrevista-466195    entrevista-55984022  entrevista-68488577  entrevista-780255    entrevista-879569    entrevista-980963
+entrevista-092423    entrevista-179719    entrevista-2846076   entrevista-353218    entrevista-4673074   entrevista-565396    entrevista-68764140  entrevista-7863761   entrevista-8819490   entrevista-982013
+entrevista-0953437   entrevista-1811770   entrevista-289524    entrevista-353467    entrevista-46773428  entrevista-566707    entrevista-6884359   entrevista-789564    entrevista-891720    entrevista-9824821
+entrevista-096267    entrevista-18193261  entrevista-290346    entrevista-354262    entrevista-47246024  entrevista-56784802  entrevista-6894000   entrevista-791289    entrevista-896668    entrevista-98912259
+entrevista-102490    entrevista-1823688   entrevista-291440    entrevista-3588302   entrevista-4735823   entrevista-56892213  entrevista-69170457  entrevista-79360358  entrevista-9004767   entrevista-9901455
+entrevista-109118    entrevista-18270219  entrevista-2922290   entrevista-3609204   entrevista-4765278   entrevista-57236791  entrevista-6933068   entrevista-79411932  entrevista-901603    entrevista-9912172
+entrevista-1108561   entrevista-18441251  entrevista-29316965  entrevista-36398447  entrevista-476744    entrevista-5739404   entrevista-699607    entrevista-794525    entrevista-901645    entrevista-992072
+entrevista-114661    entrevista-1850922   entrevista-2939888   entrevista-364735    entrevista-478217    entrevista-5766907   entrevista-70067280  entrevista-7959148   entrevista-90394637  entrevista-99643550
+entrevista-11495001  entrevista-1857368   entrevista-296128    entrevista-36527398  entrevista-48088300  entrevista-5774468   entrevista-70199425  entrevista-796439    entrevista-904020    entrevista-9969223
+entrevista-116803    entrevista-1906958   entrevista-29680692  entrevista-376115    entrevista-48148020  entrevista-5782759   entrevista-703831    entrevista-79667499  entrevista-907126    entrevista-999372
+entrevista-11705111  entrevista-191206    entrevista-29741223  entrevista-37747405  entrevista-483817    entrevista-579105    entrevista-704443    entrevista-79935965  entrevista-9074626
+entrevista-11783660  entrevista-19300543  entrevista-2976680   entrevista-3804339   entrevista-485229    entrevista-5835471   entrevista-70458099  entrevista-7998181   entrevista-911451
+entrevista-11817172  entrevista-1933118   entrevista-29838622  entrevista-3824641   entrevista-4950099   entrevista-586668    entrevista-7046684   entrevista-8095917   entrevista-91673757
+entrevista-1186827   entrevista-19577850  entrevista-2995681   entrevista-38299069  entrevista-4961376   entrevista-58910793  entrevista-7066082   entrevista-809922    entrevista-917210
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./ruas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Rua_Trapelo -n 98
+refutation aorta mohair flitting propagandized
+lustily mannish marrieds adapting arrowhead
+lassoing intrigue glassier hooliganism thrill
+mortgagor rapture meddles manumitting militarized
+shrills doughiest tyrannies adaptive terrorized impermissible
+overlord appraising expires deals misstatements guineas
+dunning yeses parterres anthologist approximates
+shrivel gabble equability blaster
+asparagus trimaran shyness grants
+tightens mighty jitters malapropism needless
+reshuffle essaying vintages deified wapitis
+adornments larynges quisling hoofs
+premeditate harlot towers mistrustful infusing
+slavishly honorable vulgarizing demotes
+intensifying meanest understating unwieldiness
+fumigate batsman resin hedonist ringers
+validity preponderating writing preppies
+troupe laminated disuse vegetarianism barnstorm dump properest
+stereotypes revue azaleas ambushes pooped glows jitney
+merging grumpily fooled invalidity proportioned
+figurines lox inaugurated swearing depilatories
+naval supine spasms mouthing battening
+lipreading billionaires welsh weepy
+wolfish penetrative delegates alignment
+virgins freedman widens shriving laxity negation
+dispose hybrid spill taxpayer murks buglers
+phonies preen smears deluge entrapping baa loaded abortionists
+phalanx porter optometry leek peskiest diets windowing
+rattlings attenuate rimed jigger planes appending smothering
+vein pesky peg plasterers amulets
+sissier hobbyist bluntness probation bossed palmettoes
+abridged binaries perky megalith intermarries monologue
+blessings opportunism runarounds baffles
+bossiness juggernauts rebuts teeth trilogy
+does poohs unutterably restrooms purples
+pinto fastenings salaam signet wayfarers
+hygienists emeralds spinoff mortarboards gluttonously right
+pheromone malingering putrid format parroting impressiveness
+geographies redoing drugstore martyrs housewives
+wrong growl audition floodlit denominations
+avenger reapplied enemata enlarger bungholes unlikely
+vender parting mi beastliest motherhood
+kleptomania trivializing lived
+lugubriously furies reposing misinforms interior
+guys watermelon brigantine exhaled
+drubbings ballot pavements extenuating
+upbraiding enliven extols papooses sonorous
+sequesters mush marksmen retained inventiveness jogged
+slapdash ultimately fizzling moped lion worsen hare uptakes
+spitballs reordering sleepers showmen kneels trait poising
+rustle alarm hulas fiberglass parishioner yawl nearsighted
+institutionalized larkspur flyleaf wakes airbrushes pensioners
+mothball passionately effete walkers pouting tyrannous
+wherefores regurgitates satisfied halos remaining guaranteeing
+somnambulist spiders strawed thermals
+jiving yaps ikons pinfeather flipper
+fatty offset workers regrettably
+persuade questions delved randomness vestment
+reestablishes mask admirals
+undergarment veterinary boys snowmen draftsmanship
+highlands enthusiast bombast
+quadrangular antipersonnel purl faithfuls slabbing
+showily infix flutter disagreement pendant
+disabuses paintings reawakening extras plowshares variegate
+fugitive deeded mien zestfully detailed yeasts streakier
+range overlapped disgruntle gauged
+leaved polonaise den vows hoarded wilfully
+frowned moderators preppier preyed eroded
+jingles balloted bedevilment skinniest wind
+bombardment yawed expurgates honked
+gooses indemnified walking naivest
+metering embalming reorganizes
+inhuman temptresses ineligible fluke parterre sown
+validly savorier emblazons novelties
+retrieve governor minx prohibitory baptized surpluses
+wins humorist repressions refutations refute unsaid flamingo
+button vulgarer unhinged assemblywoman
+extrusions disgruntle rapidly
+emporiums layer pamphleteer blinding
+refuels glorifies bellybuttons fanning
+hairy alarming esplanade roared lords overestimate
+flushed empty wees abates ransoms reordering jugged dinged
+bushel arbitrators designers windsurfing
+balling gingerly gamesmanship highs survivals
+repulses dishevelled wraps spinier
+suborbital airlines gritty streaking yuppies longitude
+transmittable textiles unrolling humility
+humoring territory bantams espadrilles
+foregone aneurisms insolvent trotters gunners
+base evergreen grandpa foretaste goaded
+mudslide embassy pinker wile batik hairnet
+reviewer foggier weans shlepp leggin
+awarded djinni righter outnumber hobbyhorse hunk exploiting
+pageant maturing embargoes gardener bets railroads
+fireplugs agreement interleukin infiltrating militating
+overestimating bereavements overdone
+genitives slitting nubs disquisition overspread
+LEIA A ENTREVISTA #5455315
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd  ./entrvistas
+bash: cd: ./entrvistas: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cat entrevista-5455315
+Owens has an alibi for the morning in question, she was in Toronto for the Mozilla All Hands Meeting.  Multiple sources, including a person in a fox costume, corroborate this.  Not a suspect.
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337GB9 automoveis.txt -B 10 -A 10
+Altura: 1,88 m
+Peso: 67,1 kg
+
+Placa J9237ST
+Marca: Fiat
+Cor: Azul
+Proprietário: Dieter Schooling
+Altura: 1,88 m
+Peso: 102,5 kg
+
+Placa L337GB9
+Marca: Toyota
+Cor: Azul
+Proprietário: Matt Waite
+Altura: 1,86 m
+Peso: 86,2 kg
+
+Placa UK8RV00
+Marca: Ford
+Cor: Petróleo
+Proprietário: Meghan Lidberg
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337OI9 automoveis.txt -B 10 -A 10
+Altura: 1,63 m
+Peso: 94,3 kg
+
+Placa K35QVOR
+Marca: Volvo
+Cor: Amarela
+Proprietário: Agnieszka Skhirtladze
+Altura: 1,63 m
+Peso: 108,9 kg
+
+Placa L337OI9
+Marca: Jaguar
+Cor: Azul
+Proprietário: Brian Boyer
+Altura: 1,98 m
+Peso: 91,2 kg
+
+Placa JFIUVDB
+Marca: Hyundai
+Cor: Laranja
+Proprietário: Charlotte Kachalova
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337X19 automoveis.txt -B 10 -A 10
+Altura: 1,86 m
+Peso: 84,8 kg
+
+Placa 9HIMAN6
+Marca: Volvo
+Cor: Branca
+Proprietário: Rosie Fredricson
+Altura: 1,83 m
+Peso: 79,4 kg
+
+Placa L337X19
+Marca: Fiat
+Cor: Azul
+Proprietário: Al Shaw
+Altura: 1,96 m
+Peso: 108,9 kg
+
+Placa SP0817V
+Marca: Hyundai
+Cor: Vermelho
+Proprietário: Ewelina Enganamouit
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337539 automoveis.txt -B 10 -A 10
+Altura: 1,65 m
+Peso: 101,6 kg
+
+Placa ZX9BGA9
+Marca: Volvo
+Cor: Vermelho
+Proprietário: Mohamed Onuora
+Altura: 1,73 m
+Peso: 82,1 kg
+
+Placa L337539
+Marca: Honda
+Cor: Azul
+Proprietário: Aron Pilhofer
+Altura: 1,6 m
+Peso: 89,8 kg
+
+Placa 8C5LC5N
+Marca: Nissan
+Cor: Rosa
+Proprietário: Lukasz Rodrigues
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Aron pessoas.txt
+Aron Pilhofer   M       16      Rua Claybourne, linha 145
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd  ./entrvistas
+bash: cd: ./entrvistas: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ head Rua_Claybourne -n 145
+head: cannot open 'Rua_Claybourne' for reading: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ ls
+Vila_Hart.txt        entrevista-1205060   entrevista-2058907   entrevista-301018    entrevista-3871205   entrevista-496772    entrevista-5905106   entrevista-706620    entrevista-812725    entrevista-9185205
+entrevista-000296    entrevista-1250176   entrevista-210355    entrevista-30259493  entrevista-3871242   entrevista-498331    entrevista-591273    entrevista-707438    entrevista-81443363  entrevista-920304
+entrevista-00448418  entrevista-125204    entrevista-218131    entrevista-3049045   entrevista-38899905  entrevista-499096    entrevista-5993978   entrevista-708943    entrevista-822576    entrevista-92391023
+entrevista-00502304  entrevista-125271    entrevista-221039    entrevista-305694    entrevista-3917097   entrevista-50168425  entrevista-60081985  entrevista-7103823   entrevista-8245680   entrevista-92670500
+entrevista-005702    entrevista-1269181   entrevista-223913    entrevista-305949    entrevista-391811    entrevista-50291987  entrevista-604403    entrevista-71186817  entrevista-825165    entrevista-927642
+entrevista-00617019  entrevista-1310392   entrevista-2277882   entrevista-306616    entrevista-39481114  entrevista-504687    entrevista-608607    entrevista-71226767  entrevista-82705993  entrevista-9332386
+entrevista-00805135  entrevista-13768464  entrevista-229443    entrevista-3074127   entrevista-39825862  entrevista-509105    entrevista-6093093   entrevista-71298441  entrevista-831512    entrevista-9346061
+entrevista-016463    entrevista-13889608  entrevista-23167806  entrevista-3099757   entrevista-40534453  entrevista-5143029   entrevista-618764    entrevista-7180973   entrevista-833367    entrevista-93473333
+entrevista-020337    entrevista-13920860  entrevista-2326746   entrevista-312546    entrevista-40610944  entrevista-514793    entrevista-6203192   entrevista-71993338  entrevista-838259    entrevista-93696502
+entrevista-022751    entrevista-1395414   entrevista-23371263  entrevista-3128999   entrevista-409731    entrevista-52280505  entrevista-628618    entrevista-720268    entrevista-8387710   entrevista-938991
+entrevista-0234126   entrevista-141030    entrevista-233800    entrevista-3140662   entrevista-41553314  entrevista-528044    entrevista-63308519  entrevista-7254073   entrevista-8402388   entrevista-9408565
+entrevista-02422821  entrevista-14153840  entrevista-2415821   entrevista-31635890  entrevista-416243    entrevista-529706    entrevista-637657    entrevista-728181    entrevista-8421696   entrevista-94126412
+entrevista-0251720   entrevista-144873    entrevista-243703    entrevista-3201508   entrevista-41814745  entrevista-53318557  entrevista-637928    entrevista-730123    entrevista-8464899   entrevista-9437737
+entrevista-03098229  entrevista-14590717  entrevista-2481877   entrevista-322305    entrevista-4204949   entrevista-535181    entrevista-638121    entrevista-73035802  entrevista-84688694  entrevista-944493
+entrevista-0315125   entrevista-147283    entrevista-250112    entrevista-32365018  entrevista-42161907  entrevista-5372865   entrevista-6417794   entrevista-7305678   entrevista-849256    entrevista-9446528
+entrevista-03316077  entrevista-15187437  entrevista-253705    entrevista-324389    entrevista-4223536   entrevista-538900    entrevista-645385    entrevista-73585672  entrevista-85262552  entrevista-9501580
+entrevista-034070    entrevista-15354942  entrevista-255531    entrevista-325611    entrevista-4225866   entrevista-54026669  entrevista-6553472   entrevista-737609    entrevista-8531248   entrevista-95095182
+entrevista-0349327   entrevista-1536668   entrevista-25582311  entrevista-32639981  entrevista-42396365  entrevista-541518    entrevista-65792229  entrevista-7422077   entrevista-856221    entrevista-95601730
+entrevista-04393507  entrevista-155049    entrevista-25834905  entrevista-32712166  entrevista-4262657   entrevista-5455315   entrevista-659803    entrevista-74225310  entrevista-8586380   entrevista-9618669
+entrevista-044492    entrevista-1578206   entrevista-259909    entrevista-331178    entrevista-42934869  entrevista-54619323  entrevista-66101490  entrevista-7469675   entrevista-861780    entrevista-9620713
+entrevista-0462097   entrevista-159848    entrevista-2601508   entrevista-332596    entrevista-4299898   entrevista-54851634  entrevista-66282920  entrevista-7541406   entrevista-862173    entrevista-9651888
+entrevista-049721    entrevista-16098538  entrevista-26373485  entrevista-33399976  entrevista-4335306   entrevista-549055    entrevista-6643191   entrevista-75434722  entrevista-862717    entrevista-9666149
+entrevista-05297663  entrevista-1642421   entrevista-2642139   entrevista-340396    entrevista-4366523   entrevista-55382746  entrevista-67279454  entrevista-755037    entrevista-8631232   entrevista-97043057
+entrevista-06032377  entrevista-1643440   entrevista-27042476  entrevista-34041151  entrevista-44533008  entrevista-55410365  entrevista-673985    entrevista-75633580  entrevista-86395001  entrevista-9709892
+entrevista-0613334   entrevista-16889008  entrevista-27504937  entrevista-342393    entrevista-4463090   entrevista-55435298  entrevista-676473    entrevista-7580872   entrevista-865918    entrevista-9711852
+entrevista-066291    entrevista-17248453  entrevista-275706    entrevista-34359897  entrevista-448086    entrevista-55477243  entrevista-67790846  entrevista-77014856  entrevista-867999    entrevista-9712946
+entrevista-071537    entrevista-17343208  entrevista-279087    entrevista-344331    entrevista-45615686  entrevista-555536    entrevista-680549    entrevista-770439    entrevista-8700943   entrevista-9728756
+entrevista-0732631   entrevista-174898    entrevista-280877    entrevista-34690644  entrevista-457117    entrevista-5581158   entrevista-6808205   entrevista-77135281  entrevista-87126591  entrevista-97393699
+entrevista-07497003  entrevista-1767435   entrevista-2834518   entrevista-347303    entrevista-457451    entrevista-55841398  entrevista-68195573  entrevista-7791374   entrevista-871877    entrevista-97409610
+entrevista-0768255   entrevista-17827186  entrevista-284560    entrevista-351963    entrevista-466195    entrevista-55984022  entrevista-68488577  entrevista-780255    entrevista-879569    entrevista-980963
+entrevista-092423    entrevista-179719    entrevista-2846076   entrevista-353218    entrevista-4673074   entrevista-565396    entrevista-68764140  entrevista-7863761   entrevista-8819490   entrevista-982013
+entrevista-0953437   entrevista-1811770   entrevista-289524    entrevista-353467    entrevista-46773428  entrevista-566707    entrevista-6884359   entrevista-789564    entrevista-891720    entrevista-9824821
+entrevista-096267    entrevista-18193261  entrevista-290346    entrevista-354262    entrevista-47246024  entrevista-56784802  entrevista-6894000   entrevista-791289    entrevista-896668    entrevista-98912259
+entrevista-102490    entrevista-1823688   entrevista-291440    entrevista-3588302   entrevista-4735823   entrevista-56892213  entrevista-69170457  entrevista-79360358  entrevista-9004767   entrevista-9901455
+entrevista-109118    entrevista-18270219  entrevista-2922290   entrevista-3609204   entrevista-4765278   entrevista-57236791  entrevista-6933068   entrevista-79411932  entrevista-901603    entrevista-9912172
+entrevista-1108561   entrevista-18441251  entrevista-29316965  entrevista-36398447  entrevista-476744    entrevista-5739404   entrevista-699607    entrevista-794525    entrevista-901645    entrevista-992072
+entrevista-114661    entrevista-1850922   entrevista-2939888   entrevista-364735    entrevista-478217    entrevista-5766907   entrevista-70067280  entrevista-7959148   entrevista-90394637  entrevista-99643550
+entrevista-11495001  entrevista-1857368   entrevista-296128    entrevista-36527398  entrevista-48088300  entrevista-5774468   entrevista-70199425  entrevista-796439    entrevista-904020    entrevista-9969223
+entrevista-116803    entrevista-1906958   entrevista-29680692  entrevista-376115    entrevista-48148020  entrevista-5782759   entrevista-703831    entrevista-79667499  entrevista-907126    entrevista-999372
+entrevista-11705111  entrevista-191206    entrevista-29741223  entrevista-37747405  entrevista-483817    entrevista-579105    entrevista-704443    entrevista-79935965  entrevista-9074626
+entrevista-11783660  entrevista-19300543  entrevista-2976680   entrevista-3804339   entrevista-485229    entrevista-5835471   entrevista-70458099  entrevista-7998181   entrevista-911451
+entrevista-11817172  entrevista-1933118   entrevista-29838622  entrevista-3824641   entrevista-4950099   entrevista-586668    entrevista-7046684   entrevista-8095917   entrevista-91673757
+entrevista-1186827   entrevista-19577850  entrevista-2995681   entrevista-38299069  entrevista-4961376   entrevista-58910793  entrevista-7066082   entrevista-809922    entrevista-917210
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./ruas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Rua_Claybourne -n 145
+assholes ventriloquists misprint revitalize dehydrating
+soloist warlike questioner kin paragraphed usual
+moll delighting morals ignoring rebated
+portrayals axes smoothest oftenest implanted sassiest
+attributed gunwales histamine reapportionment
+utilization goddamed trudged
+squeamish dimes owners whirlwinds fillers diligent exit throbbing
+brakemen lithe appointments gage agilely shrouding gladdens
+takeouts garnered fairyland balky wiliness forlorn learned
+wormed yoghurt buttresses razzing fireproof hived blusher
+fuzzing bout unkindliest adjutants stratosphere ripple
+sequestration extemporaneous
+allergist margin mangroves slopping underwritten powwow
+seek misprint universities minutiae lovely
+gorgeous numerals uninhabited midriffs
+meaningful rankest torpedos refurbishments symbolizing
+boggier deafest battlefield mishmashes battier nephew
+immersed parrakeets downed idol
+sewing adulteries festooned itemize awed
+aggression stealthier sensuously
+indelibly hustles lookouts bigotries
+squadron drooped loyalists form avidity tolls
+transversely snowstorms hallowed
+foregoing overbears frowsy hasted suet evilly deathtrap
+keener beholding augmenting spellings
+involvement tattooists tidier legitimately
+flushest frilly mukluk roundabouts dilutes outweigh
+vibrating revolver wimpling stopping misstatement
+methinks forthwith unemployable
+needling pulverized moribund beards blooded frauds
+originates paramilitaries refer
+promulgates left evening bends melt appears
+footstool unsafest gnome orator itinerant kayaked fragility
+epigram sympathizers randy mooing lions airborne dozes playwright
+fastidious partaken sell semimonthly
+fig exoneration demoralized burgles
+darnedest pharynges frequenter leftover provoking sourdough
+peahen entries frets silvers hypnotists garaged unstopping
+prawn represented dearths goldsmith frizzling eavesdroppers
+depositing who meteorologists errands loyallest
+marketable malevolently olden pallor
+averring joyously pressurize squalid tabulators spoil attributed
+dispenses gown unearth outstays sunflowers
+bohemians snappy trawling resurgent
+bad biennials whew spitefully miniskirts
+supervenes metamorphose somnambulist
+fevered swain ramrods fraudulent destitution
+onlookers megahertzes arrangements varsity
+gallons nipple portrait tempests periled retrogresses
+measures lauded invents notables watermelons stoppering
+orderlies inside slavish disputation taros waxiness
+brings supine rared virago unanimously
+overseeing thither underwriter moderation extra puke
+paginating abrupt staging fulfilment timeliest
+gamekeepers triumph patrimony
+tells splay past touts monuments exits
+materializing salaries soda belies
+mussing alluvia equally overwhelming dreamed elitists
+enthusiasm rightfully tolling denied platitude
+nautiluses vilifies flatterer steakhouse
+fast pig tarantula tabued eyeful glided violin terribly
+onionskin blowsiest turtledove
+idealize petting deliriums pantomime multiply gibe
+segregationists lighters materials
+surprise madmen neuritis understand renters
+blindside overages semiweeklies
+nimblest masts emotionally prepositions midwiferies
+domain pawls takeaways urologists bested
+mambo intensively supports misrule sessions drifters angularities
+bereaving laundry graft modulation queened
+fruition philosophizes drum bloodiest
+nonresident gallop rapider disputatious
+demesne helplessness shored livable
+dam pinwheeled hayseeds gold alphabet pshaws undisputed
+foolproof titters grammarians tinseling vapid meadow soothing
+mutes dismisses premature shortstop fating
+etymologist roams hew familiarizes glyph dumpier
+peregrinations diplomata teenager gutting sweetbreads
+artworks extents distributive unsoundest
+bin snugged loftiest pardoning remarrying
+garrottes boggy dullards nurseries probating
+ensigns geysers squander tryout tattooists
+beastlier funded teemed pallor hulled strums vibrator wining
+thee menservants rhythm hefty shell broths platoon
+bedspread fielded lard astride
+philosophies worshipper jasmine expurgation
+presumes maximums plugins gamblers jitterbugged
+washtub herbage nosey freaky needle
+debark slurps strays indivisibility
+nutritious gambles farmed path permeated marries
+whippersnappers moleskin smoothest plumping tilts patenting
+malteds enamored remediable minx gaffe released
+isles presupposing slamming seemly fit
+housemother bridges spoken flapping elderly
+snowmobiled magnesia ay hobgoblins
+outlandish bonging implore leprosy wineries aftertastes
+overawing bier mintier antiquarian questioned minibusses
+playrooms polymer reupholstering misbehave
+singularities doze goutier dissertation transshipped
+twigging weeper inhumanely trotting perky fervently
+abstentions jigsawed devised lava swaggerer
+shipshape grumpier dressy pruning glamourize bleated
+ranks journeys remanded freezer strops maidenhood devilling
+strenuous salines stevedores untidier storming weeder
+niggles awaking phalanges slung sandier statelier
+slangiest intentness knotted
+varlet spiralled shelf tassel paints
+swim sandblaster resignations pupped page forsakes deserts
+remonstrated mallows turntables yipping drowsier
+hyper exquisite stalagmite piping marauds wary nippiest
+insets robust woks payoffs veto rubdown straggly
+teethes helpmeets starry bordering
+golfed prophesy termagant village
+lieges goings knighthoods presiding flatterer
+waivers dabble mutineers pulley prorate pioneering
+latest floats harpooned filial snoozes
+revelers oriental warm quibbled horrors medley
+shufflers averting hankered venality rangier
+enviousness insensible elevated squirmy
+pendant muddying welshed baneful
+summerhouse expediently oakum agronomist robbery domineered
+instigating wriggliest outfield likewise
+maimed fibbed interviews jolly hulas
+inveigles stuffing libeller erstwhile pizzerias probes
+teensier thalami surreptitious textile
+heeded breakage waived debarkation
+wriest humanizing balminess benefiting grannie nonjudgmental
+importation warily mukluks liqueur proximity
+lawyers garbanzos hulled buttered
+guileless readjust folly persuasively
+disturbed disengagements stomping alloys
+gigglers balmiest russet musts simulations fags forebear
+busywork hives kenneled billing shrouding distastes
+temperamentally frontiersman hobbyists nightfall extenuates
+perforated synthesizes laughter proselytizes
+nudity wiz restate sobered undesirables
+qualms tussles residues fibbed northerners
+intelligible leftover wafer quilting malleability
+immunity gait map eggshell ottomans browbeaten signifying
+vanning buffeted bridling assailing summerhouses
+unearths slimness resupply heirs
+fumes wight waterbed furors agenda funkiest persisted distaste
+debugging vagabond roughing aughts
+twilled roosters densely vegetarian
+LEIA A ENTREVISTA #1767435
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ car entrevista-1767435
+bash: car: command not found
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cat entrevista-1767435
+Too short to match the camera footage.  Pilhofer is not considered a suspect.
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ grep L3373U9 automoveis.txt -B 10 -A 10
+grep: automoveis.txt: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L3373U9 automoveis.txt -B 10 -A 10
+Altura: 1,93 m
+Peso: 78,5 kg
+
+Placa NAGPKNX
+Marca: Fiat
+Cor: Rosa
+Proprietário: Maksim Acuff
+Altura: 1,65 m
+Peso: 64,9 kg
+
+Placa L3373U9
+Marca: Ford
+Cor: Azul
+Proprietário: Miranda Mulligan
+Altura: 1,98 m
+Peso: 70,8 kg
+
+Placa XDI2UCE
+Marca: Fiat
+Cor: Dourada
+Proprietário: Anky Cheikh
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337369 automoveis.txt -B 10 -A 10
+Altura: 1,93 m
+Peso: 75,3 kg
+
+Placa ZLO3EMY
+Marca: Ford
+Cor: Prata
+Proprietário: Flor Magnini
+Altura: 1,58 m
+Peso: 108,4 kg
+
+Placa L337369
+Marca: Honda
+Cor: Azul
+Proprietário: Heather Billings
+Altura: 1,58 m
+Peso: 110,7 kg
+
+Placa HYPVZ7R
+Marca: Mazda
+Cor: Vermelho
+Proprietário: Peng Kim
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337DV9 automoveis.txt -B 10 -A 10
+Altura: 1,88 m
+Peso: 93,9 kg
+
+Placa 84I23ZX
+Marca: Mazda
+Cor: Verde
+Proprietário: Robyn Sigmond
+Altura: 1,91 m
+Peso: 62,1 kg
+
+Placa L337DV9
+Marca: Honda
+Cor: Azul
+Proprietário: Joe Germuska
+Altura: 1,88 m
+Peso: 74,4 kg
+
+Placa G9J35EZ
+Marca: BMW
+Cor: Rosa
+Proprietário: Elmir Sorribes
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Joe pessoas.txt
+Joe Germuska    M       65      Rua Plainfield, linha 275
+Joel Tverdohlib M       55      Alameda Noble, linha 87
+Aretha Joensen  F       17      Rua Birchwood, linha 6
+Joerg Kikuchi   M       66      Rua Hester, linha 267
+Joel Rogowska   M       21      Rua Roseclair, linha 10
+Joel Simon      M       65      Rua Bardwell, linha 74
+Joel Kammerichs M       33      Rua Stratton, linha 428
+Joel Giordano   M       60      Rua Belden, linha 488
+Joel Scanlan    M       62      Vila Newland, linha 361
+Joel Csernoviczki       M       79      Rua Lubec, linha 78
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./ruas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Rua_Plainfield -n 275
+airheads wake homburgs wren sheikdoms sidearms
+deforming deplored merrier arpeggio oakum motivates bordering
+jigging vulgarity preregisters prehensile radiology
+lengths feuds boons mouthwash fillies imposes asinine
+disobliged troop molehill reefers
+visioned somewhere denser unseasoned minuter mewing lode
+footsie oddities emptily astrologer foresight
+renown flange obligation manually filet offside seasoning
+android unmasking offensiveness kettle masseuse
+urinates leashes emulsions swilled
+substation senna xenophobia resolutions betrothed
+hydrosphere disbursing demoed potential
+troopships harmonies liabilities junkers bonsai borrowed
+grebes rights madly subsets maltreatment woodsy remains
+yoga bedroll drowsiness eyesight veggies sportswomen swoons
+enameled pointing tiros inflationary
+purgatives foxtrots waste detonated fumigates
+ripening unkindliest podiums profusions ointments shrewdness
+roundhouse demurer sprains essentials
+tipsy starlit staining doggy negatively fondest private venally
+versions gazeboes profiled herd unsold pushing upswings tailoring
+threesomes investitures putrefies roaster healed travelings
+webbing shimmered extravaganza
+flashing illegally gastronomy fogeys semifinalists
+redness immure galore dotty iffiest
+jugglers internationalized shysters bedding
+understudy novel remodeling granted diesels soliloquizing
+debs solider bedlam dogmatist propellant globule hazards
+flutists fathomless staph desperadoes disdain expresses
+buttresses harrowed finalizing
+oppressors pontiff lawmakers digitization opportunity
+jape downsize bassinet fluting pioneer stippling
+tendentious properly windswept moves damages
+vague analyses shirtsleeve forums frenzy
+beggars elided niftier underfeeding takeouts juxtaposing
+ungodliest fluttery ovation thirsts
+falsities asserts sultanate safariing
+trowels mistyping hangout misrule angler neatest threats
+beatify shabbier reassembles azures handiness ultimatum
+jabberers hesitatingly revealed
+meaningless dealer squalling smelter gamier attempted jiggering
+shoddiest quotable septette loudness
+overtime pealed run fen sinner deadline
+waltz drains perpetrated nabs pranks laughingly
+antelopes surplus supervisions bulled painlessly highboy
+skulking vapidness voided overload
+figureheads bergs unseemliest weep lampshade damned
+intentions ways envelope elevates wordings brandied
+whippings frogmen visioning haggling
+forenoon evergreens tutorials unedited
+diffusing prof deadbeats retention hypnoses
+measurement sixty gaits gulps meddles earmarking
+filmmakers playfully likeness
+guyed handymen hoofed pimento thrillers
+em landslid ganglia mudslide radiuses
+flirts flukier greet say untutored shed pedestrianize
+resonant tile harvests diagnosed
+heavyweight subduing huntsman tameness mewling
+furrowing showery swiveled lees fitly graded breakdowns
+gaberdine individually unsightliness underdone
+beavering frugal mugs reproved skylarks
+partway failures louver spread tattling tarred appointing
+slumping dogs sees ventriloquists guarantying
+roughest fobbing retinue granddaughters
+untimeliness underplaying jauntily ranged
+nailbrush fearing out rubberized assemblymen heaping
+weevils perambulated shepherded
+blobbing tomfooleries apropos shavings advisories denominate
+jubilantly skit duties annual
+staying reign helpmates gyp staffer flamboyantly bootlegs
+partners ritziest undershot saltpetre polyunsaturated
+dens galleys mauled supernumerary tenuously
+roundly anatomists upstages grain uninstalls sequentially
+gregariously bullshitting humanizers semaphored
+flutist nonviolent linden werewolf uselessly redo aggrieves
+reigned ineptly bleary item lore gadfly identifying
+briskly blowgun gizzard usurps barnstorm
+gushiest reentries linnet posy neuritis topples nattiest
+turners assist gasket harridan biped jam orderly
+briskly house teeing fatherland pretending
+losing belaying reinterpretations
+bikinis hall earthenware jousting jalopies resonantly famous
+steeple uneaten devolution greenness
+waxworks reamer enrolments generates
+rowed veneers disappoints reprise grubs aviary downward
+delivery dominates whorehouse
+investing phoney punts epitome boobing
+tweets embroil beefiest typesets
+answers muddle assemblymen divulges khakis registrars
+swags mama legless abandon postpaid detoxes assuages
+underwrites seaworthier skirmishing transitted
+teased longings swellest film infrequently lug
+expressions dough wrongdoers inert tasselling
+stagnated dragoon naught useful bearing
+honester tandems austere denatures
+ethnologists surely undisputed surmounts
+sniff flax gratis snorts intimations fussiest juggles
+disruption hake lawfulness maximally
+breadfruits guerillas fortifies teaspoonsful wigwags
+jolliest antagonized brow insetted greenhorn seemliness
+astride likened literals inquisitors
+offsets sorely penlite slugging outbreak legitimates
+dabbles fought flotsam faddish mitering
+phalli muleteer knot nutritionally mindful roadhouses
+registration paupers unreservedly wrathfully tameness
+umiaks ignitions insider animates
+spadefuls albeit kaolin disappointment obtuser guttural
+jumper doily juxtaposing index withdrew dehydration
+bluegrass minority fizzling inuring
+perturbation reader boldness attempted gusseting helixes
+semiannual warmongers homily violet
+quitter pilafs impounded neath unbranded
+worried nighties postdate penises dram employments
+revise limitation deliberated
+laureates barbarity previous pantheons undergrowth
+mutt undisguised flabbiness legislative
+honks premier latex lords rehearse privateer angle seafaring
+halon voyaging sheathed kayaking evangelizing
+yawing snorkeler woeful pretenders
+outranked promulgate threshed invades wets disjointed
+provisions protestation fluffs loadstones
+paradises trunk establishes
+pattering eliminate larboard sherbert reeking
+tottered drivings getup hydrangea buzzwords
+sinewy interlards teethe jaywalkers rendered platforms
+otter inadequately triggered reform
+illustrate gin underpinning rubberiest superstar verbalizing
+illustrative eventuated thinkers testy
+elder brinksmanship provided bidet tarragon mailed
+inhabits justifiable retaliate brigades
+drivers unionize hovered demolished
+referential surges munition guiltiness
+twins gunwales formality purveyors fixity engorged
+wittingly playpens hardball
+doggonest tuxes urgent graphologists toddle swatter
+alive salivate fateful foremast
+payable shrivel bit battens versus
+showboating leer anemometers burlesqued neodymium glider
+translation rosary tame onyxes blatantly
+downsizing flirt spiriting paleontologists darting
+nouns lager gauntlet depopulation interpose
+inertly bunged betided wade tenderfoot greyer
+signed neighbors mainstream
+puddings drive unsubstantial
+statutes yippee interpersonal king yeas rainmaker
+guidelines maturely gimlet morons
+revolving eyes forlornly knothole
+feral beadiest drum horror garbage
+appertained liter gird flumes snuff homer dealerships
+reinterprets hallowed divvy generalize unharmed intersperses
+venders vituperated shapelier
+sorbet monitor gigglier exist
+vines seaworthier dextrously props owl disqualifies
+era squashed distemper rowdier representation preternatural
+asphyxia drops bops relinquished pizzeria tantalizing
+tidbits slaves still tomahawks potions overridden
+dandier filled heartburn enjoyments unwieldiest
+teenager garlanding parent fishtails
+detoured divan savored repeaters landslidden reassembled
+redeeming boosters meekly underwear doer analgesia route
+meningitis pulverization foreheads points mosquitoes
+whiting blitzed fiftieths imagery duelling habitual
+wile hostages raspy burbling skunk probationary
+empresses leggiest ineptly agendas sparkle tabling
+southwest wrinklies irritate torturers earmuff dovetails
+outtake kookier typewrite lassoed shortstop
+stylishly fleshliest nominally dolefully
+eastbound routed milieus daffier housemaids pompously metros
+merest revisited replying joined fixer
+sunbeam diverse version maxim experimenters
+refrigerators revolutionize wordiest
+triathlon testes plurality dialogue ebonies granularity
+doping gingersnaps thump slaloming
+apples televised soling disinters undermines
+integuments fumigates dilute pip veritably
+interruptions unforgiving grafters
+zygotes underlie posy diseased
+involving panes lazier betided bout kinks gashed roars
+tubbier whodunit liquifies banjo
+renewing bullied earned dabbled
+distressful fluidity mentoring philistine seaworthier
+market uvulars yellower penology wastebaskets fellow
+breeziness gunslinger ameliorating lazying intangibly
+ass gardened radiotherapists billowiest
+sledging fundamentals hovel wag hinted hails mammograms
+yesteryear disturbs dither horsy followed
+buildup grumbler subleased squeals neutering rotate
+overstaying bobsledding pestles beaming
+fridges patron alongside walkers vexations tripping
+grossing agog frivolous tarred gruelling involvements gangling
+preferred toothless illustrative lawn merry amen dives koala
+latterly manfully hoards pneumonia tailspins
+freshman phantoms offstages dimer belt
+kisser should hefted overwhelm fussily
+survey dear energies pressurizing tussled tubby
+bumbler powerlessly painted porringers poops
+ponytails surpasses brightly punishing
+raglans jigsawn disappeared roast glamoring hygienists
+trusteeships leased firebug repositories dirge bulldogs
+reinterpreted roving pawnshop neigh growing
+redistribute ornamentation tangelo
+sundered aphid hosteled slakes retyping garrisons
+revolt preponderated daughters tattoo
+tears kiddies martinis annulling mils pilgrims
+pared breed infatuating toothy multiplying
+erratas underplaying employer braziers booksellers
+disloyal lobe buffaloed hindsight stiff single misrepresented
+vulnerable kowtow thrilled phrasal
+imprisonments manured yeshivah rutabagas musketeer
+haberdasher wiretap signalized alignments
+datelined innuendos infringing rebuffed knew pigtails
+dunned donkey parallax triumph rosebush
+misguide voluptuousness required bulrushes fixings
+boning humaner turnstile auguries alarmingly hips poetesses
+rarefying attitudinized fund engagements monologue plangent
+multivitamins tidewaters refuse aquamarines
+brides gossip matter flash kebob jagged flashlight
+embellish guested shaft graphing generative smites
+moveables unfitted insensate surplused
+postman privatest tattlers spar
+telemeters benumbing foraging emission suffragettes
+exponent bloody patella dipsomania inebriates sizer slithery
+letterheads admiral exploratory tepees passionless
+vat intuitions embezzled pidgins tarriest
+senders stabilize damming fearful informational
+meandering flanked journeyed oversaw spirally prohibitory
+thinning boar awakening tiers ovoids priesthoods grittiest
+unequalled granddaughters mys
+espying kilotons wringers priggish
+westerly unburdens monkeys singleton submitted toothpastes
+fuddles anonymity friend firefighting loan
+veterinary presuppositions sauntering
+takings dyestuff silvered hotheaded adieu frisky woodpile
+garrison priest navel mouthing tribune bigwigs please harvest
+malted redoubles diminishing sellers expurgations
+arpeggio medallion supple fittings overheats
+heterogeneous pipes pumpkins defender harmless ambition
+integrates aflutter surtaxed turnouts
+ebonies traversing lallygagging defuse
+weathermen aboriginals maypoles
+yon hussars redoubt neurologist autograph
+fourteens overridden legume testifying
+beakers propinquity sage shyness spottiness fingerprinted
+pagodas spoil integrals wrinkled pokers
+detainment offshore toughens moroseness
+outstripping passage forestalling twisted sweeteners megalith
+marjoram bur oxidized grasped informality selflessness
+triangulation sailboat depraved propitiates
+gentry swaggered dapperer vulgarity lessons hover
+statuesque smash dollies braved vets folksier
+demilitarization hotshot utilitarian
+skunked fiddler sued impregnating redheaded reappraise
+lots mostly apparent ghosting innards equestrians
+sparseness polytheist masterful misanthropist
+ruffian investors trapping borderland tipis
+wapiti apertures seventieth quartermasters
+quivered peeper easternmost waterworks hothouse immobilized
+unzip roils titbit slaloming marimbas
+serer teary euthanasia bootie paginated modeling measuring
+habituating transferals slake leafy trident
+orioles stubbliest tonsil statehood
+homesteaders skateboarders sheds eery makeups hedgehog
+moonlights disband readerships mulish
+id stabilized gizmo undoes haemorrhages
+lather husks departs mightily plum felling bobbling pebbled
+ethnology reagent fingering strengthened developments
+versatility legitimated refinishes
+designated earwigs timider enzymes liable prettified remissions
+tattletales wheezes foreword
+businesswoman inadvertent vaporizes timelier
+indorsement aptitude serializes medalist
+bloom tuberous springboards pretzel tittering habitation
+stemmed triggers tinsmiths warding
+splinter dusting rattletraps anthropomorphism
+LEIA A ENTREVISTA #29741223
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cat entrevista-29741223
+Não deve ser considerado suspeito, pois não é associado ao SkyMiles e nunca foi membro do Museu de História do Bash.
+
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L3375A9 automoveis.txt -B 10 -A 10
+Altura: 1,58 m
+Peso: 93,9 kg
+
+Placa G6O4JPL
+Marca: Hyundai
+Cor: Verde
+Proprietário: Bridgitte Bale
+Altura: 1,8 m
+Peso: 79,8 kg
+
+Placa L3375A9
+Marca: Honda
+Cor: Azul
+Proprietário: Jeremy Bowers
+Altura: 1,86 m
+Peso: 92,5 kg
+
+Placa SEZHWM5
+Marca: Volvo
+Cor: Preta
+Proprietário: Tino Henze
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Jeremy pessoas.txt
+Jeremy Bowers   M       34      Travessa Dunstable, linha 284
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./ruas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ head Travessa_Dunstable -n 284
+nebulas sundowns bungled patriotism trod enterprises
+summarize invested toastier prosier
+retaliations opinionated blink unlikely payload glossing
+skirted womanlike fiftieths undulant pantsuits rebuttal
+twins payrolls shadowy assisted teletypes
+magnitude hotheadedly relatives lizards
+impoverishment digits underbidding
+brook abusiveness insinuated hall stupors
+prolix departmentalize holder
+labors hallelujah mounting squirreling digitally
+sleeker fresher identify inflated undersign unselfishly
+supposed polyglot poinsettia nestle belong bullrings
+fryer equip unrelenting gamins
+jinn fold burning sweetbriar hazelnut
+spelt sanitation thirteen irrigate shootings garrotted
+pored integration sods noun airheads tutu asphyxiated
+diligent migraine stranding snippet pylon overheated neoprene
+montage amortized mislay pennyweight
+eliminates informers uninitiated dividends
+nuptial legible wisely kitties graveyard perused
+indomitable deathlike termite speedier goal
+streakier xylem gnome barraged lithe evener vases nulls
+linger legumes nuzzled disquiets grownup
+awes roods draping gaunter underplay
+misanthropy blonde starting fastenings yonder
+totaling avowing doubted adjurations blustery
+rebel asphyxiates ephemeral blasted purified roan
+expos volunteer vibrant gals estimators
+kinky bobbed motherland prolongation
+deformations instigate manifesto partway slumps evade wondering
+tridents prefigured martinet intramural verge eases
+squaws unmake stile developments squirrelled breathier
+merge pennyweight dehydrates drunken gauged
+divine purgatorial panoramas smelliest goats dummies
+swooping paean studentships earplug
+spriest onus shakedown spline riders ear mezzanine
+loony implementable spurting patriot
+expend dithers breathes indispositions
+neutralization bushes reimposing varnished hightailing
+griming overstays syllabifying
+dogs mansard humbly stipulating vents
+uninsured judgmental imprisoning bedevil
+arboreal milliliter rivet ultramarine
+pylons gaff nativity revolutionaries
+manliness wrung misdiagnosing
+enables mutability leafs mixed
+inequitable enemy wither doubts disrobing
+sallied thoroughbreds drivels rewired
+jolting dad drainers breaststrokes sweatshops rioting
+messes tram synapse violins attestations muggier
+murderously husky tattoos gobs bankrolling
+dermatologist sparsely reminds slushiest biographer
+overweight plenteous buffalo pinion respirators
+shepherd bison larder matrons blanket expurgate gossamer
+quoited widening expound overpowering names
+roughing boilerplate toastmasters wimples defrosted
+prithee purloining iota suppers penultimates mobile
+mambo footbridge pediment bookmobiles skinheads
+pursued dustiest bandoliers parterre tassel hoaxer
+prizing easterner masseuse skeletal plowed gladiola
+dimwits emigrating inseams booked strenuous
+allaying apples sombre animal ogles
+purport muter wirelesses wart garners transmittable
+engraves hurlers burps throw metallurgists
+marker undermined shadowy endeavored
+bulkhead mushier owned quadruplets
+frats skilful assert pilaff ditto swattering
+tonnes rasped nature divest rushed poised
+buffers bongs antiquates atavism prompts burliest
+atones flimsiness welshes marvelous tiller sped
+periling proliferated vertebrate heliports
+rumoring palmettos fidgety wholesaling
+superego rammed trollies badgered exits astounded
+biologists stomping ballyhoos pooping dirtiness goalkeepers
+harmfully mishandled invalid leis earmarks deteriorate fur
+formal lifted equalled spoils infatuating
+avenues diaphragm tormenter intangible divinest
+signals smirks donation trolling miniaturizing
+warden bustle everything toked hothouse
+obligingly dirtiness strongest supplemental dandle
+rumination armlet harmfulness boogie admittedly
+remaking freehand students anatomy
+plus interruptions elaborateness bride soundproofing
+tempters enjoyed stem turnabouts awarding
+reuse saris signer blaring puzzlement surmises
+embezzlers miss hunker imperatives met elevate garners
+semifinalist sleepwalked doxologies madras inform
+orangutang filly tinkled readers wisely underlining
+odometer blemish vermilion theft
+intenser squired ellipsis franker vibrated repository
+forgotten gusset plaintiff journeying spore messengers
+softly vignetting inland plunges lavishing
+laughable revamp greedier gorillas pedagogy bogus
+windiness privileging misprint fermented
+sambaed hedged sol languages wonted markup vinaigrette derailments
+numbly frailties shorthorns invisible snowmobiling
+sellers bedevils interring shortish restraints soreheads
+fiendish willpower exoduses jingles gouges stones booby spellbind
+astronomers obtrusive ballyhoo solves majoring montages
+resell oppresses unseemlier exults mainsail metronome
+adequate buzzwords basso pease
+marbling shore imbuing dispenses whoppers ravishingly
+betas seaworthiest reaming sprawl hyphenating
+pronoun flirtations beaded blubbers degeneration barons
+expositions masseuse blooper thoroughgoing hearties
+ferns graded mandatory farting drafted butterfat mesmerized
+tout defensing torridest milksops fruitless thrusts reeks
+lingerie soothsayer tidbits neutralize
+impasses bear rekindle wearily spelling
+sheaf surmounts laywomen flippantly briefs
+unimaginative happening hilltops toddy uppers masturbates
+resignedly gelatinous undressing
+woodpile lumberyards topknot shilling worthlessness
+graying rounded goody thru unsatisfying
+lighthearted dawn irresistibly braille espying smash
+hanker deform wiriest vulgarities tenpin inquisitions
+guiltiest premiering dribbler materialism
+hardware prophesy tidiest snowfalls replenishes
+peers foragers mildest buttering sample simplifies bloodstreams
+saprophyte sermonizing trombonists
+retells aspartame grandees horror
+muse hooped libations sixties linings randiest
+underlines rotates rappers nitrate extrapolate
+segregated knifed mudslides warn arbitrators
+manhunt bridals gestating shown spelling
+longish regaled emulsified jut wheezy aberrations horsiest
+smuttier evening rumbling leashed preordains
+oregano imputations breastbones
+wafting transposes everybody rehabilitated
+gristle maneuvering postgraduate elude goofed
+thrown rabies wittiness spokeswomen queering warehousing
+reportedly layaway kindergartens fern slides
+quotient phrased unwarranted ferry
+evaluates idea anorexia resound might
+meted inadvisable auxiliary morosely myrtles
+rooked wilderness trader matrimony pep reinvests rehash
+skittish sorts laden authorize gawkily symptom
+expansive odd alike moth primness trio waterfront
+belief kidnapping fluxes measuring obsoletes spermatozoon
+emblazoning gobbledegook ampul bodyguard demonstrator
+marker shovelful unmade teapot
+wastebaskets dishtowels radio disk lessor
+harm habits hankered wives irradiate
+solitaire trued handles readout
+verve reprized booby saddlebags disguises genealogist
+johns hailstorm wiper larded prolongations
+uninterpreted wise seals lazybones braking
+deadbolts trapeze revamp sightseer
+brutalizing inestimable filthiest mole pretenders
+outsold boastfulness barbarians prided
+swatting instrumentalists manganese regatta
+spills forbear perturbations
+inaugural salute fairground
+refrigerant gully extirpation intransigents wear
+apply mulled stabilization renovation marauder
+ungovernable masthead expatiate
+paining able refutation blessings gamuts
+fogged warmer polarizes tailpipes pilaus either axioms freezer
+gapes extraditions despondent bailiff grinds salter
+thimblefuls enemy womanlier overdo shutterbugs
+impulsed postmarking weighed fatherly teens
+designers playful merely regressive
+salvo light dishes attain allegation tutu
+utmost bile preregistering mulatto
+blowup blindside lassoed mash foiling aware kiddie pinball
+tweeters impinged tag vagabonded garnisheeing embellish
+refraining endorsed dependably
+hyperventilate adumbration indefinably
+attributions internals vasts amputates raffled lewder evangelism
+aborigine gather beast tenpins maundering debonair tensing
+takeovers dreamlike supernaturals infrared propounds
+longhorn stringent badlands
+nerves subordinated trip nonhuman
+renewing befits mobilizations smiting katydids
+imbeds furze sawn autoimmune denature module
+noun palliate traitors mixture blanket monkey upbraid parqueting
+fantasies labeling liberties beguile
+fluently dunks unsmiling pawns sun inkling nineteens
+evident armature evildoers snug permute
+trombones garrisons band temptingly avatars
+bygone expatriate periwinkle trips iterators
+exploiter ashamedly houseplant
+vegetables tendentious misappropriation
+folk whet wigwagged nephews inventiveness fluidly balmier
+leopard disappointments law augustest sidewalks
+both dispossession overpays slimness outside toddle humorous
+fearfully exhibited septuagenarian
+trikes filmy grosses antiquating lags straws rephrase
+gismo gauzier layperson debarkation bumpiest
+pends roominess index imprints moaned footstool amalgams
+phoneme preying sheave transgressors ossifies online
+sheltered rafter simpered alleviates mizzen spankings
+routes filthy outrun glamouring tzars
+reset nauseated flourishing alit nighty granule wilfulness
+upends snoopiest sewer periwigs sentimentalized busted
+longings subdue repaying dealers taro
+zings ghostlier napes nestled jaw pixels fraternally
+revalue tiptop bills thrasher gunfights mannered
+spiny heavier plangent valeting anagrams operators
+mousey mild flour remiss auditorium manning theorizes
+impetigo flukey boosts jutted
+teetotaler detoxing middleweight wetlands reloading
+fashion imbedded ebullient plummeted queries brattier
+fizzling illuminate pastiest squirrel marinades
+apparent tarpaulin outlaid newspaperman
+mummified heaving prized weirdos soused features aloes retrofits
+humorous loonier trustworthiest
+boozing broadsided belt frogmen stud battiest
+riffling theorizes hang mortal davits finery
+palates slipknot overambitious antonyms promulgation
+enthusiasms prep wayfaring arty firework gobbed footsteps
+informally stillbirth golden unorthodox
+loaders gad selflessness suggester lipids regimenting
+anapests usury estimating roundworm rehabilitate
+orangutangs panoplies freshet overturning
+unisex severer riposte alternatives mads washboards
+earshot fluttered nighties assumption eery overkill insulator
+spooned defenseless nobly assessing gospels
+garbageman waster radishes throats
+invasion snows unprofessional delirious
+separations rubbishes unquestioning bedspreads subset
+strangers intruders headfirst foreseeable overindulge
+stumpiest pore proforma turned novas honorary
+tasked repast awaking snake noble pronouns
+sapping poisonously wished unrulier remnant impostures
+dissension regroups wildfire moonshine
+espressos healthier avoidable sanatoriums
+humanized shirtwaist oddly inversely bonded dethronement
+roll devastating fastest reissue populism pare butterfly
+bullying intrust paroles debarred
+felony advises allay sexually otherworldly
+profiteer knelled anteed dinky vibraphone yearling vituperate
+staple homonym turbojets oozing argument
+diplomata filmstrip fuddled formation vitally
+wannabe quail wrongheadedness via tonsil
+grafting smash narrows defeatist nuking relabelling
+woodsier sharpshooters pillows gouges
+marquess wangling revelled gaily peppery alternations
+prevailing lander blonder forwardness
+sax spear young angiosperms surrender synopsis drownings
+justifiably hyped roister whiling
+sugaring revivifying tormenters
+ministrations homiest anesthesiologist
+feasibly grammar motorist penitentiaries spelled
+totems suture pitiless spotlessness quakes reputations
+renter puzzlers swoops messiah inertia whorl
+sideburns lustiness militated streamline dextrous
+dryest firefly ratings worrywart pulsations
+legality irruption portability
+patios insanest urbaner trouser irresponsible
+verity rebirths highbrows overstays
+balderdash poorer extravaganza new
+likest vizier baser ghostlier adjured
+penknife shoot potash buffer jiggled soiling levels folksiest
+median snootier hogsheads modulator market
+medulla hooping sallied postponement trillions
+mount why broth globes louses slowpokes
+suitors medians spatting preregistering obviously sheath
+implements linnet migrates restoration
+hearings positives overbites annihilators
+ruffed heartened unlawfully fortes
+swines runny asseverating warden anthropoids tutelage mummified
+suggestively outlined appointees abrogating adornment sterilization
+larders blues legislating elide instantaneously
+whiter bate squirrel pastures beekeepers bridle
+swifter stakeout midwifed endurable inns reentered
+urea gambled runners unfavorable vitiating jogs
+horrendous impairs biweekly healing lambasted lefties
+snob exhumes egotists ammeters delphinia medieval
+dillydally gully pleasantries rented savvied kept
+fruitless soberer grinds arraigned
+dregs mandibles internes seeped obelisks reassuringly
+pinball multiply masterwork wen strumming oppressively
+resold armsful satisfies sniffs stentorian overextend
+overripe shear barren hypothermia gamma interests
+serenade anteing gown bronzing abysmal
+revived perversions slovenliness randomizing howdah stamped
+beeline sluttish jiggling squalls trips terminable
+familiarization shortbread ems devilry handgun
+dampers mudslingers barks vibe vulgarer pullovers keys
+thundershowers plotting hardwoods butane
+rotations predestining assimilated ingredients spongier
+oh groves bibliophiles hail extirpate womanlier
+LEIA A ENTREVISTA #9620713
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/ruas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./entrevistas
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cat entrevista-9620713
+A casa parece estar vazia. Não houve resposta quando batemos na porta.
+
+Após questionar os vizinhos, parece que o morador viajou recentemente.
+
+Será considerado um suspeito até que se prove o contrário, mas teríamos que eliminar outros suspeitos para ter certeza.
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/entrevistas
+$ cd ../
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep L337WR9 automoveis.txt -B 10 -A 10
+Altura: 1,83 m
+Peso: 68,5 kg
+
+Placa FOY41ZZ
+Marca: Volvo
+Cor: Preta
+Proprietário: Joseph Last
+Altura: 1,86 m
+Peso: 101,6 kg
+
+Placa L337WR9
+Marca: Honda
+Cor: Azul
+Proprietário: Jacqui Maher
+Altura: 1,88 m
+Peso: 59,0 kg
+
+Placa 1FEDUD0
+Marca: Hyundai
+Cor: Vermelho
+Proprietário: Ruggero Dong
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ grep Jacqui pessoas.txt
+Jacqui Maher    F       40      Travessa Andover, linha 224
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ ls
+associacoes/  automoveis.txt  cena-do-crime.txt  entrevistas/  pessoas.txt  ruas/
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio
+$ cd ./associacoes
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ ls
+AAA  AAdvantage  Academia_Fitness  Associação_de_ExAlunos  Biblioteca_da_Cidade  Clube_de_Campo  Costco  Delta_SkyMiles  Museu_da_História_do_Bash  REI  United_Clube_de_Pontos
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ cat AAA
+Courtney Yankey
+Robert Mothersille
+Akvile Saedeleer
+Daniel Hayashi
+Roel Garcia
+Vladimir Khousrof
+Maung Cammareri
+Al Shaw
+Meagen Spellerberg
+Thais Mihalache
+Habibollah Smith
+Mirna Seck
+Margaux Jung
+Snjezana Hostetler
+Hanna Shaito
+Sergey Barachet
+Amine Lin
+Thierry Ortiz
+Mirac Ariyoshi
+Tina Imboden
+Jayde Madarasz
+Yu Sakaguchi
+Kaori Donahue
+Lesley Bithell
+Celeste Lapi
+Marie-Andree Dalby
+Carlos Dyatchin
+Fabiana Boussoughou
+Laurence Zyabkina
+Gideon Kowal
+Yasser Pannecoucke
+Kayla Kim
+Felix Verbij
+Jolanta Vives
+Emanuele Hussein
+Jens Lavrentyev
+Andrea Reilly
+James Rosic
+Daria Palermo
+Maria Arismendi
+Kelly-Ann Sundberg
+Caroline Denayer
+Shuai Muttai
+Wallace Mejri
+Kevin Giovannoni
+Tianyi Boughanmi
+Chia England
+Lina Tjoka
+Hovhannes Piccinini
+Andriy Hrachov
+Maja Orban
+Iaroslav Jakabos
+Hakim Svennerstal
+Hamza Tomecek
+Shane Wu
+Niki Grangeon
+Hyok Martinez
+Roderick Nagai
+Filippos Sinkevich
+Danilo Chabbey
+Kami Shabanov
+Muradjan Maeda
+Reza Egelstaff
+Annamaria Yi
+Dmytro Arms
+Michal Jakobsson
+Christin Brown
+Shaunae Stoney
+Nicolas Carou
+Mathieu Pigot
+Lukasz Rodrigues
+Wouter Brennauer
+Hamid David
+Lauren Johnson
+Guido Kanerva
+Tina Lim
+Marcia Amri
+Konstadinos Voronov
+Shana Halsall
+Nanne Maree
+Katya Kindzerska
+Haojie Fernandez
+Wesley Meftah
+Inaki Miller
+Marianna Ford
+Kay Kouassi
+Simon Martinez
+Antonia Gercsak
+Ardo Mastyanina
+Austra Sekyrova
+Guilherme Latt
+Andre Takatani
+Grainne Ross
+Edwige Henderson
+Odile Green
+Koji Miyama
+Ka Ilyes
+Sarolta Michelsen
+Malek Tomicevic
+Viktor Santos
+Nikola Zhang
+Raphaelle Batum
+Bianca Coleman
+Selim Tregaro
+Azusa Perkins
+Melissa Guell
+Irina Treimanis
+Viktor Bielecki
+Artur Teltull
+Giovani Alflaij
+Katarzyna Talay
+Gabor Hochstrasser
+Zsuzsanna Hodge
+Carole Pyatt
+Bumyoung Soares
+Yawei Fourie
+Shara Green
+Priscilla Chitu
+Beth Andrade
+Leah Driel
+Juan Shankland
+Timm Augustyn
+Linda Lotfi
+Erasmus Flood
+Cecilia Clapcich
+Gabrielle Tikhomirova
+Tinne Campriani
+Raul Makanza
+Arianna Lauro
+Nicholas Bithell
+Tamir Fazekas
+Traian Chen
+Rebecca Janic
+Anett Kamaruddin
+Kyle Koala
+Peter Zyabkina
+Asumi Colo
+Stephanie Comas
+Andreas Sinia
+David Yaroshchuk
+Henk Lee
+Alex Kim
+Anton Dlamini
+David Male
+Tilak Costa
+Salima Nakano
+Jorge Wilhelm
+Urska Fijalek
+George Gogoladze
+Luis Petkovic
+Almensh Zbogar
+Inaki Milanovic-Litre
+Carlos Mellouli
+Natalia Benedetti
+Jacques Ramonene
+Jonathan Munoz
+Laura Helgesson
+Miryam Dunnes
+Aries Coston
+Anthony Kudlicka
+Shinta Gong
+Ivana Grubisic
+Judith Williams
+Lauren Subotic
+Kevin Okori
+Attila Sullivan
+Ivo Bagdonas
+Klaas Wykes
+Jack Shafar
+Fanny Castillo
+Jamale Fu
+Jongeun Kabush
+Vincent Krsmanovic
+Thomas Grubbstrom
+Kobe Driebergen
+Annabel Church
+Hajung Cardona
+Endene Samsonov
+Aretha Hatton
+Leandro Schuetze
+Daniel Loyden
+Rene Marques
+Hassan Nichols
+Ronja Marroquin
+Glenn Liivamagi
+Mohamed Silva
+Rushlee Krsmanovic
+Viktor Rangelova
+Mebrahtom Fields
+Darya Wu
+Martin Mozgalova
+Deron Estanguet
+Olga Lobuzov
+Niklas Donckers
+Constantina Nagel
+Kristina Walton
+Joe Germuska
+Adelinde Mangold
+Benjamin Kempas
+Andela Meauri
+Levan Ingram
+Marcin Dyen
+Bilel Lazuka
+Aleksandr Holliday
+Kylie Ignaczak
+Mohammed Sakamoto
+Cian Purnell
+Hope Cseh
+William Polavder
+Alberto Vidal
+Martin Strebel
+Brittany Askarov
+Haakan Okrame
+Sutiya Kida
+Sibusiso Yudin
+Stephanie Adlington
+Gilles Zhang
+Ivan Edelman
+Rattikan Prapakamol
+Yassine Bazzoni
+Vaclav Mustapa
+Konstadinos Houghton
+Jan Gramkov
+Sabrina Burns
+Andreas Okruashvili
+Tyler Borisenko
+Nicholas Kudryashov
+Lieuwe Lim
+Luis Grand
+Lynsey Bailey
+Ling Langridge
+Marc Ivezic
+Scott Klein
+Yumeka Cipressi
+Jong Borysik
+Lucia Price
+Jangy Scott-Arruda
+Monika Heidler
+Gia Yoon
+Rebecca Simon
+Gabor Palies
+Patricia Zhang
+Sebastian Bayramov
+Jarrod Kovalenko
+Thuraia Voytekhovich
+Par Awad
+Sanah Ye
+Alana Thiam
+Apostolos Sharp
+Anfisa Whalan
+James Seferovic
+Lyubov Gunnewijk
+Sergey Abalo
+Nick Osagie
+El Rooney
+Kevin Jeptoo
+Natallia Sidi
+Ekaterina Hernandez
+Hui Ahmed
+Louis Zhou
+Agnieszka Iersel
+Ling Kromowidjojo
+Corine Kashirina
+Joanna Ayvazyan
+Lisa Peralta
+Yige Rhodes
+Ferenc Aydarski
+Zac Ashwood
+Paul Tsakmakis
+Peter Wagner
+Kamilla Rietz
+Tina Ortiz
+Christopher Philippe
+Marcus O'leary
+Fantu Nikcevic
+Aldo Nicolas
+Raissa Araya
+Melaine Souleymane
+Alexandr Liu
+Luigi Marshall
+Jehue Wild
+Lyudmyla Dilmukhamedov
+Francisca Mocsai
+Cory Munoz
+Ancuta Emmons
+Xiaoxu Cardoso
+Lucy Miller
+Alex Nichols
+Irene Russell
+James Siuzeva
+Aleks Eisel
+Keith Pavoni
+Jayme Suarez
+Anna Hosking
+Viktor McLaughlin
+Ainhoa Taylor
+Jaime Zhang
+Thomas Antonov
+Crispin Terraza
+Omar Atkinson
+Yulia Hostetler
+Viorica Schwarzkopf
+Mostafa Kleen
+Debbie Mohamed
+Coolboy Tian
+Marin Absalon
+Marjo Janusaitis
+Luc Reyes
+Marouan Ilyes
+Jorge Lambert
+Gilberto Bergdich
+Christopher Gkolomeev
+Pascal Davaasukh
+Jennifer Medwood
+Yadira Marghiev
+Inaki Murphy
+Sonata Raif
+Joshua Capkova
+Iuliana Costa
+Bruno Szarenski
+Natalia Kim
+Lubov Begaj
+Maria Steiner
+Jakub Gondos
+Richard Cremer
+Kanako Zhang
+Bashir Krovyakov
+Shuo Emmanuel
+Bianca Sekyrova
+Iker Franek
+Lucy Perez
+Casey Hardy
+Tian Abdvali
+Daniel Verdasco
+Mikhail Polaczyk
+Jeremy Bowers
+Richard Timofeeva
+Dilshod Allen
+Aleksandar Atafi
+Yifang Narcisse
+Sonja Ide
+Miranda Mulligan
+Craig Jaramillo
+Joyce Broersen
+Jun Zhudina
+Marcus Lahbabi
+Michael Hammarstrom
+Yage Bruno
+Emma Celustka
+Takamasa Kasa
+Danila Henao
+Ayouba Carrington
+Roc Bari
+Hyok Maciulis
+Nathan Zhang
+Nazmi Patrikeev
+Conrad Ji
+Diego Smith
+Beatriz Nooijer
+Chia Bleasdale
+Carine Karakus
+Rene Chen
+Damir Hendershot
+Rahman Carboncini
+Hakim Nyantai
+Carla Anderson
+Tatyana Mitrovic
+Viktor Michshuk
+Jennifer Athanasiadis
+Benjamin Bilici
+Xavier Hayashi
+Renal Boskovic
+Krista Dai
+Martina Voronov
+Zara Jung
+Lauryn Bae
+Mechiel Maric
+Mahmoud Hession
+Rafal Sidorov
+Claudia Platnitski
+Dorothy Abdvali
+Marcin Cele
+Todor Hernandez
+Dirkie Yun
+Tina Teutenberg
+Marko Baltacha
+Christopher Shubenkov
+Hannah Barker
+Sarah Zaidi
+Keri-anne Kauter
+Sajjad Ulrich
+Joseph Lin
+Mario Boninfante
+Gonzalo Mirzoyan
+Nikolina Khuraskina
+Rand Fanchette
+Aoife Pyrek
+Fateh Kovalev
+Xiangrong Palmer
+Adrienne Buntic
+Novak Solja
+Luciano Ahmad
+Ravil Mokoena
+Gulsah Makarova
+Jemma Mayr
+Nazario Barrondo
+Ryunosuke Hagan
+Paul Khadjibekov
+Tarik Atangana
+Ellen Liivamagi
+Michael Hultzer
+Maksim Chibosso
+Kristina Munro
+George Matsuda
+Fabio Truppa
+Rosie Rapcewicz
+Joan Fudge
+Irina-Camelia Wilson
+Nathalie Ionescu
+Rhys Faber
+Dobrivoje Mogawane
+Ferenc Savsek
+Mercy Brusquetti
+Ayman Kaliberda
+Francisco Irvine
+Nadiezda Catlin
+Kevin Zavala
+Jelena Febrianti
+Huajun Kerber
+Jong Stoney
+David Rossi
+Zied Rumjancevs
+Szabolcs Culley
+Lisbeth Savani
+Yu Chinnawong
+Marvin Peltier
+Atthaphon Starovic
+Antoinette Silva
+Jose Paldanius
+Glenn Gonzalez
+Artem Sanchez
+Thomas Doder
+Sarra Bainbridge
+Paola Tai
+Carolina Wang
+Siham SCHIMAK
+Inna Yu
+David Schuh
+Jade Kopac
+Tyler Marennikova
+Byungchul Lee
+Edino Fuchs
+Erica Nakagawa
+Caroline Warlow
+Yasemin Cavela
+Fernanda Purchase
+Christos Jo
+Rebecca Gao
+Petr Waterfield
+Ana Reilly
+Olga Jones
+Shuang Cabrera
+Stefan Li
+Todd Kalmer
+Rubie Sukhorukov
+Larry Lapin
+Ariane Nazarova
+Christophe Tanii
+Christina Petukhov
+Mojtaba Polyakov
+Petr Schiavone
+Teresa Jing
+Charline Chen
+Xin Cuddihy
+Anne-Sophie Gustavsson
+Aymen Bespalova
+Silvia Konukh
+Kenny Faminou
+Mervyn O'malley
+Irada Velthooven
+Sheng Romdhane
+Olena Krsmanovic
+Suzanne Viguier
+Aleksandr Rutherford
+Jane Paonessa
+Nur Beisel
+Katerina Riccobelli
+Errol Benes
+Clemens Mulabegovic
+Gundegmaa El-Sheryf
+Minxia Yu
+Boniface Kanis
+Gonzalo Pacheco
+Brady Ruciak
+Sverre Dawkins
+Soufiane Odumosu
+Liam Maley
+Michal Bazlen
+Clara Jeong
+Mathew Phillips
+Ihar Radwanska
+Marquise Mohaupt
+Lorena Marenic
+Timo Caglar
+Katie Park
+Davit Asano
+Rosie Fredricson
+Sofya Mortelette
+Ibrahima Louw
+Peter Ochoa
+Veronika Erichsen
+Lauren Janistyn
+Seoyeong Montoya
+Radoslaw Sze
+Alexis Diaz
+Marina Ma
+Francesca Rowbotham
+James Yallop
+Roberta Callahan
+Valerie Penezic
+Duhaeng Agren
+Zurabi Lunkuse
+Kristina Sireau
+Limei Ioannou
+Zicheng Bardis
+Jennifer Marco
+Sergej Yli-Kiikka
+Marisa Rocamontes
+Shuai Sudarava
+Ryan Pota
+Milos Pavoni
+Elizabeth Cheon
+Jan Merzougui
+Anderson Guo
+Athina Kula
+Tavevele Kelly
+Slobodan White
+Zara Luvsanlundeg
+Jinhui Brens
+Didier Munoz
+Katerin Pliev
+William Vicaut
+Ahmed Elkawiseh
+Alexandru Govers
+Meiyu Iljustsenko
+Gal Pascual
+Mona Colupaev
+Maria Drais
+Chana Borges-Mendelblatt
+Krista Coci
+Matteo Nieminen
+Nicholas Howden
+Helen Cheywa
+Kasper You
+Taoufik Geziry
+Aleksei Rouwendaal
+Stefan Noonan
+Juan Kim
+Werner Totrov
+Michael Gigli
+Heiki Outteridge
+Petr Vicaut
+Jade Jallouz
+Rares Hsing
+Agnese Bartakova
+Ryosuke Ciglar
+Ewelina Safronov
+Yuliya Gomes
+Michael Sjostrand
+Yuderqui Mrak
+Niki Batkovic
+Kristina Hochstrasser
+Timothy Francisca
+Joao Ziadi
+Iain Kossayev
+Andres Liu
+Lauryn Fujio
+Murilo Rohart
+Jarmila Hallgrimsson
+Stefanie Thi
+Adonis Kitchens
+John Keefe
+Alberto Bauza
+Sultan Wilson
+Tomasz Lanzone
+Kamila Sakari
+Darae Elsayed
+Joseph Last
+Carole Adams
+Lina SCHIMAK
+Alistair McGeorge
+Madonna Kim
+Jaele Sharp
+El Toth
+Sarra Larsen
+Elea Li
+Junjing Kang
+Jaime Bruno
+Carlos Hall
+Kurt Tran-Swensen
+Anabel Dominguez
+George Fuente
+Ibrahim Seoud
+Line Emanuel
+Christian Brata
+Kanae Uriarte
+Artur Munkhbaatar
+Pawel Jensen
+Hui Akutsu
+Jemma Wang
+Kate Bourihane
+Nikolaus Milatz
+Irina Song
+Raul Baumrtova
+Endri Clijsters
+Jitka Tranter
+Radhouane Klamer
+Zamandosi Chuang
+Lina Hassine
+Gabrielle Raudaschl
+Ingrid Papachristos
+Vincent Lawrence
+Robert Choi
+Mizuho Suetsuna
+Hang Slimane
+Omar Hurst
+Eva-Maria Speirs
+Alena Davis
+Zhe Hochstrasser
+Katrien Na
+Pavlo Stewart
+Adrienne Kreanga
+Paul Kitamoto
+Josefin Lamdassem
+Brendan Mendy
+Grigor Suuto
+Teresa Kim
+Jiao Faulds
+Iosif Wang
+Charlotte Kachalova
+Sally Fuamatu
+Johan Arvaniti
+Sarah Dovgun
+Tapio Gorman
+Mhairi French
+Tamas Guo
+Olha Lewis-Smallwood
+Dmitriy Montano
+Rodrigo Burke
+Peng Kim
+Chia-Ying Djokovic
+Rodrigo Santos
+Mai Csernoviczki
+Asier Filonyuk
+Ali Jallouz
+Zamandosi Flood
+Jianbo Janikowski
+Ka Caulker
+Kristian Surgeloose
+Matias Tait
+Mariela Mortelette
+Marian Jager
+Deni Yao
+Neil Kopp
+Paulo Seric
+Britany Charlos
+Andrea Lammers
+Joel Giordano
+Sebastian Makela-Nummela
+Yayoi Buckman
+Wei Hazard
+Tarek Luis
+David Al-Athba
+Josefin Ifadidou
+Rui Loukas
+Katarzyna Gelana
+Marina Murphy
+Sanne Kuo
+Timothy Goffin
+Lucy Nakaya
+Krystian Pen
+Rebecca Ruta
+Katherine Luca
+Sabrina Abily
+Aida Ganiel
+Desiree Inglis
+Ahmed Magdanis
+Manuel Silva
+Arlene Navarro
+Mhairi Sommer
+Toni Shevchenko
+Rosie Aydemir
+Hannah Lozano
+Miguel Skujyte
+Amine Najar
+Anna Scozzoli
+Neymar Kaczor
+Raul Hoshina
+Yifang Jang
+Ivan Christou
+Greggmar Benassi
+Thomas Song
+Hicham Hendershot
+Melanie Disney-May
+Automne Moline
+Elena Belyakova
+Travis Hammadi
+Luis Booth
+Miljan Henderson
+Ana Dukic
+Aldo Cerkovskis
+Britany Oatley
+Kay Rosa
+Anthony Dahlgren
+Alexa Loch
+Neisha Liang
+Brent Queen
+Kerron Lee
+Ganna Zonta
+Mary Tomashova
+Betkili Betts
+Volha Mahfizur
+Edith Sofyan
+Kyung Kaifuchi
+Eduarda Bartonova
+David Lashin
+Yanmei Matkowski
+Vera Sene
+Xuanxu Barnard
+Ursula Ward
+Lizeth Coertzen
+Ahmed Chammartin
+Peter Jang
+Peter Sloma
+Silviya Elaisa
+Larisa Nagy
+Lina Al-Jumaili
+Mihnea Hamcho
+Emma Chadid
+Toea Robert-Michon
+Charlotte Ranfagni
+Elia Gittens
+Younghui Karasek
+Ligia Czakova
+Marcel Sigurdsson
+Aleksandar Sandell
+Radoslav Susanu
+Sarah Viudez
+Bjorn Couch
+Asafa Robles
+Hendrik Tetyukhin
+Ondrej Houssaye
+Ayman Suursild
+Georgina Manojlovic
+Bruno Kiryienka
+Kate Pink
+Joel Tverdohlib
+Shiho Berkel
+Maryna Desprat
+Chelsea Thiele
+Slobodan Meliakh
+Steven Solomon
+Xavier Cox
+Bin Iersel
+Ferdinand Clair
+Alexandra Solja
+Julien Chen
+Fabienne Bouw
+Robert Skrzypulec
+Mouni Malaquias
+Lok Al-Athba
+Laura Wu
+Amy Kim
+Kum Musil
+Arnaud Gonzalez
+Marvin Rice
+Mateusz Metu
+Destinee Kucana
+Inmara Castro
+Natasha Birgmark
+Ryan Porter
+Sviatlana Yin
+Primoz Aubameyang
+Jamie Kim
+Tate Zucchetti
+Hotaru Terceira
+Boniface Eichfeld
+Yugo Sesum
+Ana Pavia
+Yue Zargari
+Casey Cullen
+Selim Karagoz
+Dominique Hall
+Yumeka Guo
+Luciano Telde
+Gavin Sobhi
+Jose Pedersen
+Vladimer Sorokina
+Paula Zhudina
+Karen Avermaet
+Yuderqui Sahutoglu
+Silvana Erickson
+Rodrigo Surgeloose
+Henri Navruzov
+Manuela Syllabova
+Jinyan Bernard-Thomas
+Flor Jonas
+Angelica Lopez
+Allison Musinschi
+Saori Kienhuis
+Elena Falgowski
+Shannon Lapeyre
+Nan Gionis
+Marcelinho Pendrel
+Milena Wojnarowicz
+Nathan Freixa
+Honami Kozhenkova
+Andja Gabriele
+Becky Wozniak
+Ye Fitzgerald
+Caroline Kirdyapkina
+James Padilla
+Woroud Baroukh
+Sebastian Gamera-Shmyrko
+Kozue Martinez
+Erick Fedoriva
+Vladimir King
+Kazuki Leroy
+Jennifer Kim
+Annie Ali
+Zargo Dehesa
+Andisiwe Graham
+Myung Kim
+Claudia Butkevych
+Alejandro Collins
+Nadzeya Allegrini
+Christinna Hudnut
+Tim Phillips
+Dorian Sauer
+Claire Murphy
+Hector Moutoussamy
+Nuno Rajabi
+Olesya Silnov
+Maartje Fabian
+Rizlen Errigo
+Mel Quinonez
+Magdalena Siladi
+Peter Gonzalez
+Susan Bluman
+Olga Schofield
+Wesley Truppa
+Maja Balykina
+Jeremiah Dean
+Alvaro Tanatarov
+Yihua Grunsven
+Isiah Lacuna
+Carlos Yakimenko
+Zakia Zhurauliou
+Ashley Saramotins
+Tim Bernado
+Jean Andrunache
+Ian Rhodes
+Micah Smith
+Jing Aponte
+Da-Woon Morkov
+Silviya Saholinirina
+Ser-Od He
+Aman Schulte
+Urs Kim
+Christian Godin
+Robert Dent
+Jiaduo Calzada
+Jesus Barrett
+Sidni Sze
+Massimo Groot
+Georgios Kostiw
+Roxana Edoa
+Mariaesthela O'connor
+Kate Scheuber
+Viktoriia Mathlouthi
+Nam Baga
+Mattia Sanchez
+Clara Fuentes
+Kasper Addy
+Kyung Steffensen
+Veronika Wruck
+Lukasz Kovacs
+Dominic Seppala
+Pierre-Alexis Valiyev
+Francis Thiele
+Hichem Schwarz
+Nelly Rumjancevs
+Kateryna Mitrea
+Richard Kaniskina
+Andy Maier
+Victor Kondo
+Eusebio Wallace
+Mariana Selimau
+Marlene Cabrera
+Ebrahim Baggaley
+Denis Gonzalez
+Blair Stratton
+Concepcion Vasilevskis
+Alvaro Viljoen
+Marco Dries
+Joseph Nielsen
+Zi McColgan
+Alejandra Ndong
+Silke Nam
+Robbert Kanerva
+Pui Na
+Kelly Kulish
+Kathleen Jo
+Andile Li
+Georgios Antal
+Iryna Radovic
+Amel Kim
+Fabiana Hortness
+Jessica Ochoa
+Princesa Firdasari
+Natalia Manaudou
+Nikita Kirdyapkina
+Xiayan Harden
+Jordan Voglsang
+Tatyana Wang
+Michael Sinia
+Katya Baddeley
+Ondrej Kitchens
+Simas Takahashi
+Midori Seraphin
+Wassim Matsumoto
+Ai REICHSTAEDTER
+Guojie Timofeyeva
+Danielys Butler
+Zohar Iwashimizu
+Simone Abrantes
+Viktorya Schmidt
+Thi Kostadinov
+Norman Weltz
+Leith Clear
+Marleen Rodrigues
+Arnaud Feck
+Cristian Ghasemi
+Desiree Kavcic
+Birhan Ryan
+Xueying Hillmann
+Attila Tafatatha
+Myung McCafferty
+Daniele Babaryka
+Natalia Gatlin
+Lucie Yang
+Boglarka Vacenovska
+Natalia Child
+Pavel Lambarki
+Anthony Mizutani
+Albert Barthel
+Paula Darzi
+Iain Hartig
+Nahomi Jobodwana
+Ubaldina Ziegler
+Jo-Ting Losev
+Lina Kubiak
+Valentyna Townsend
+Dauren Smulders
+Sangjin Hindes
+Nourhan Benfeito
+Ioannis Martinez
+Lidiia Ng
+Sara Campbell
+Andrija Peker
+Julian Mehmedi
+Christine Heglund
+Eric Silva
+Lyndsie Dudas
+Lucy Maguire
+Lucia Berens
+Annemiek Arikan
+Benjamin Kuramagomedov
+Irene Kreisinger
+Greta Apolonia
+Tassia Grotowski
+Lauryn Powrie
+Wilson Sauvage
+Doris Wilke
+Olga Nguyen
+Maria Smith
+Dmytro Golding
+Anna Tomic
+Jeneba Lee
+Wai Schoeman
+Laura Neben
+Nguse Byrne
+Yakhouba Garcia
+Silvia Nakamoto
+Wenjun Taimsoo
+Oriol Gonci
+James Pohrebnyak
+Matt Waite
+Dante Ma
+Evgeni McDonald
+Byunghee Filipe
+Katerine Podlesnyy
+Rasul Tichelt
+Gabriella Sarup
+Colin Nakayama
+Ines Kovtunovskaia
+Caitlin Carli
+Camille Andersen
+Noraseela Podrazil
+Stanislav Cherobon-Bawcom
+Chia Hilario
+Bohdan Kostelecky
+Seen Flores
+Anastasiya Rupp
+Keri-anne KORSIZ
+Timothy Li
+Petar Bauwens
+Robert Gan
+Chuyoung Sokolowska
+Naomi Gattsiev
+Monika Hwang
+Paula Pamg
+Alexey Gille
+Eva Hirata
+Michael Vasco
+Jordan Panizzon
+Ana Tursunov
+Victoria Abarhoun
+Kristina Cerutti
+Jake Claver
+Afgan Mrvaljevic
+Petar Dominguez
+Yumi Buerge
+Ning Chen
+Elena Coster
+Nick Schodowski
+Andre Romeu
+Taehee Bondaruk
+Aksana Baniotis
+Simone Morin
+Diego Dahlkvist
+Katerina Saenz
+Serhiy Robinson
+Rachel Jelcic
+Emma Wei
+Carrie Spellerberg
+William Bindrich
+Sarah Guzzetti
+Mohamed Koo
+David Jeong
+Mikaela Iwao
+Ingrid Fogarty
+Jean-Christophe Kirkham
+Mana Konyot
+Krisztian Ida
+Sinta Denisov
+Zakari Isakov
+Travis Ponsana
+Carles Solesbury
+Nestor Seric
+Mindaugas Saleh
+Daniele Nurmukhambetova
+Luol Mooren
+Aylin Maurer
+Hans Haldane
+Liangliang Miller
+Olivier Zhang
+Ahmed Korzeniowski
+Telma Andrunache
+Nicolas Dotto
+Georgie Santos
+Bruno Oliver
+Ahmed Kurthy
+Daniela O'malley
+Nils Guzzetti
+Akeem Ngake
+Meredith Yu
+Burcu Bacsi
+Georgina Zuniga
+Glenn Defar
+Natalia Akwu
+Maialen Uriarte
+Dragos Stone
+Ali Milthaler
+Robin Vesely
+Elodie Arcioni
+Sandrine Yumira
+Giulia Schwanitz
+Nataliya Nielsen
+Tervel Pilipenko
+Gauthier Alimzhanov
+Ivan Caballero
+Ruoqi Nowak
+Kristian Yamaleu
+Radhouane Cawthorn
+David Moutton
+Jacqui Maher
+Jamila Rodhe
+Faith Kim
+DeeDee Montoya
+Elena Quinonez
+Stephanie Piasecki
+Julieta Pars
+Andrea Desta
+Tina Susanu
+Johana Carman
+Rand Gilot
+Joyce Kuehner
+Duane Skvortsov
+Marianne Li
+Khalil Shi
+Phuttharaksa Signate
+Flor Magnini
+Dylan Espinosa
+Viktor Lamdassem
+Barry Utanga
+Jonas Vlcek
+Tugce Vozakova
+Darrel Yamane
+Joao Brecciaroli
+Laura Dundar
+Karsten Thompson
+Anzor Gu
+Sehryne Akrout
+Marcel Gustafsson
+Svetlana Dieke
+Donald Guderzo
+Hao Fukumoto
+Sylwia Kiss
+Zhiwen Piron
+Sabina Williams
+Daniela Gavnholt
+Nguyen Ozolina-Kovala
+Kumi Lewis-Francis
+Fatih Eisel
+Vasyl Geijer
+Hung Mutlu
+Piotr Rabente
+Lara Siegelaar
+Marcus Khalid
+Jose Uhl
+Sebastian Drame
+Niki Klimesova
+Ioannis Mockenhaupt
+Aleksei Wang
+Mannad Khitraya
+Nicola Belikova
+Elisabeth Santos
+Ahmed Saladuha
+Lucy White
+Anabel Kal
+Volha Otsuka
+Kwan Otsuka
+Thiago Bruno
+Geoffrey Plotyczer
+Dora Veljkovic
+Miki Zhang
+Phelan Poulsen
+Mie Hall
+Pietro Walker
+Schillonie Benaissa
+Maximiliano Matsumoto
+Ryan Prasad
+Kristy Zhu
+Andrei Masna
+Holder Lamont
+Susana Neymour
+Kari Halsted
+Eric Sawa
+Mohamed Thomas
+Brad Ogimi
+Jianbo Megannem
+Laetitia Manuel
+Fineza Primorac
+Milena Vogel
+Mark Turner
+Andrew Negrean
+Hiroshi Schuring
+Brice Agliotti
+Yukiko Nicolai
+Adam Zaripova
+Johannes Berna
+Eloise Balooshi
+Teodor Wilson
+Yasmin Soliman
+Aniko Ahmed
+Dieter Schooling
+Gulcan Burling
+Grant Watkins
+Ross Nakamura
+Asgeir Dzerkal
+Tina Ipsen
+Alex Hosnyanszky
+Sebastian Lelas
+Ho Thunebro
+Micheen Zhang
+Nina Sornoza
+Rachel Burrows
+Jessica Unger
+Tamara Cafaro
+Kaylyn Chavanel
+Braian Osayomi
+Yasmin Brathwaite
+Christina Maneephan
+Natalie Barbosa
+Kimberley Obiang
+Daniel Blazhevski
+Emma Alphen
+Christian Zambrano
+Mate Montano
+Sergio Ivankovic
+Shijia Conway
+Dong-Young Kim
+Laura Boyce
+Mayara Trinquier
+Simon Alphen
+Aaron Santos
+Gulnara Deeva
+Jo-Wilfried Schornberg
+Jie Gebremariam
+Shota Michta
+Tim Mankoc
+Jane Trotter
+Line Naylor
+Suzanne Silva
+Astrida Roche
+Roderick Huang
+Iveta Blagojevic
+Azneem Sharapova
+Silvia Chaika
+Ioulietta Assefa
+Nadia Jung
+Lucie Kryvitski
+Westley Tatalashvili
+Geraint Traore
+Mikhail Vlcek
+Matthieu Wang
+Florian Filova
+Kelsey Grumier
+Dan Sinker
+Donglun Borlee
+Sophie Ahmadov
+James Hsiao
+Brian Boyer
+Maoxing Bedik
+Theodora Conway
+Pavel Lepron
+Femke Gelana
+Seyha Balogh
+Dalibor Vidal
+Anna Menkov
+Ava Rusakova
+Mike Bostock
+Nicholas Mitchell
+Giorgia Borisenko
+Zouhair Ri
+Audrey Pulgar
+Reine Huertas
+Hyelim Villaplana
+Alicja Kamionobe
+Francois Spanovic
+Michel Sano
+Zhuldyz Hoxha
+Nicolas Aranguiz
+Augustin Lozano
+Andreas Paonessa
+Hongxia Tan
+Angelo Uhl
+Will Mehmedovic
+Javier Volosova
+Natsumi Pohlak
+Henna Causeur
+Komeil Menchov
+Layne Smith
+Lisa Wang
+Olesya Nielsen
+Cristiane Forciniti
+Cedric Subotic
+Barbora Parellis
+Danijel Carriqueo
+Hanna Gynther
+Adam Houssaye
+Erasmus Perez
+Chien-Ying Fraser-Holmes
+Tina Boidin
+Sadio Chouiref
+Juan Tourn
+Sebastian Sorribes
+Yimeng Amaris
+Stephanie Kieng
+Kelsey Bludova
+Chantae Matuhin
+Abdullah Jiao
+Job Kretschmer
+Fabio Figes
+Nils Pascual
+Uvis Fuchs
+Alexander Herrera
+Mona Taibi
+Seiya Railey
+Radoslaw Robles
+Kathleen Schmidt
+Dani Loukas
+Kaspar Brown
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep Jeremy AAA
+Jeremy Bowers
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep Jeremy Delta_SkyMiles
+Jeremy Bowers
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep Jeremy Museu_da_Historia_do_Bash
+grep: Museu_da_Historia_do_Bash: No such file or directory
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ ls
+AAA  AAdvantage  Academia_Fitness  Associação_de_ExAlunos  Biblioteca_da_Cidade  Clube_de_Campo  Costco  Delta_SkyMiles  Museu_da_História_do_Bash  REI  United_Clube_de_Pontos
+
+renan@DESKTOP-9TBJUR5 MINGW64 ~/OneDrive/Área de Trabalho/assassinato-na-linha-de-comando/misterio/associacoes
+$ grep Jeremy Museu_da_História_do_Bash
+Jeremy Bowers
