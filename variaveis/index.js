@@ -58,6 +58,8 @@ console.log("Olá, meu nome é", meuNome, meuSobrenome, "e eu tenho", minhaIdade
 
 console.log(meuNome, meuSobrenome, "é um estudante?", statusAtual)
 
+let saldoBancario  = null
+
 //TypeOf
 
-console.log(  typeof meuNome, typeof minhaIdade2, typeof statusAtual)
+console.log(  typeof meuNome, typeof minhaIdade2, typeof statusAtual, typeof saldoBancario)
