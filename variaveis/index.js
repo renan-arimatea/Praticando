@@ -63,3 +63,26 @@ let saldoBancario  = null
 //TypeOf
 
 console.log(  typeof meuNome, typeof minhaIdade2, typeof statusAtual, typeof saldoBancario)
+
+
+// PRATICANDO 2
+
+/* const nome3  =  prompt("Qual o seu nome?")
+const idade3 = prompt("Qual a sua  idade?")
+
+console.log(typeof nome3, typeof idade3)
+
+ */
+// Conversão
+
+const numero = 43
+const stringNumero = numero .toString()
+
+console.log(numero, stringNumero)
+console.log(typeof numero, typeof stringNumero)
+
+const string = "43"
+const numeroString = Number(string)
+
+console.log(string, numeroString)
+console.log(typeof string, typeof numeroString)
