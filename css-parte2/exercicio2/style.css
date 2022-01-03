@@ -1,0 +1,14 @@
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+button:active {
+    background-color: pink;
+    color: red;
+    transform: scale(1.5);
+}
+
+#botao {
+    text-align: center;
+}
