@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import MeuComponente from './components/MeuComponente';
+import MeuComponenteDeClasse from './components/MeuComponenteDeClasse';
 
 
 function App() {
@@ -14,6 +15,8 @@ function App() {
         <MeuComponente nomeDaTurma={"Gebru"}/>
         <MeuComponente nomeDaTurma={"Hooks"}/>
         <MeuComponente nomeDaTurma={"Hooper"}/>
+
+        <MeuComponenteDeClasse nomeDaTurma={"Gates"}/>
     </div>
   );
 }
