@@ -2,6 +2,8 @@ import './App.css';
 import React from 'react';
 import MeuComponente from './components/MeuComponente';
 import MeuComponenteDeClasse from './components/MeuComponenteDeClasse';
+import Formulario from './components/Formulario';
+import CartaoCredito from './components/CartaoCredito';
 
 
 function App() {
@@ -17,6 +19,10 @@ function App() {
         <MeuComponente nomeDaTurma={"Hooper"}/>
 
         <MeuComponenteDeClasse nomeDaTurma={"Gates"}/>
+
+        <Formulario/>
+
+        <CartaoCredito/>
     </div>
   );
 }
