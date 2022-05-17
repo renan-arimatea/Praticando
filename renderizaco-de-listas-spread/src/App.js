@@ -11,6 +11,19 @@ class App extends React.Component {
     this.setState({ listaDeFrutas: novaFruta });
   };
 
+  alterarFruta = () => {
+    const novaFruta = [...this.state.listaDeFrutas];
+    novaFruta[1] = "Melancia";
+    this.setState({ listaDeFrutas: novaFruta });
+  };
+
+  removerFruta = () => {
+    const novaFruta = this.state.listaDeFrutas.filter((fruta) => {
+      return fruta !== "Banana";
+    });
+    this.setState({ listaDeFrutas: novaFruta });
+  };
+
   render() {
     const listaDeFrutasAtualizado = this.state.listaDeFrutas.map(
       (fruta, index) => {
@@ -23,6 +36,8 @@ class App extends React.Component {
         <h2>Lista de Frutas</h2>
         <ol>{listaDeFrutasAtualizado}</ol>
         <button onClick={this.adicionarFrutas}>Adicionar Morango</button>
+        <button onClick={this.alterarFruta}>Alterar Maçã</button>
+        <button onClick={this.removerFruta}>Remover Banana</button>
       </div>
     );
   }
